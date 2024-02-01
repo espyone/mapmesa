@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+      <link rel="stylesheet" href="new.css">
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+
+#parent_ {
+  position:fixed;
+  width:400px
+  height:900px;
+  opacity:1;
+  }
+.bgMapLarge_ {
+position:fixed;
+top:180px;
+left:-110px;
+transform:rotate(-30deg) scale(2.15);
+}
+.x40-55  {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(180deg);
+  top:920px;
+  left:710px;}
+
+  .numplace  {
+    z-index:9;
+    font-size:16px;
+    font-family:'Azeret Mono';
+    position:absolute;
+    text-shadow:.2px .5px red;}
+</style>
+  </head>
+  <body>
+<div class="address">3600 N Hills</div>
+<div class="numplace"></div>
+<div id="parent_">
+<div class="bgMapLarge_"><img src="large-img/3600NH.jpg"></img></div>
+<script>
+
+const nums = [
+
+  { range: '04 03 02 01', top: '860', font: '24', left: '640', rotation: '193'},
+  { range: '05 06 07 08', top: '810', font: '24', left: '650', rotation: '13'},
+{ range: '09 10 11 12', top: '680', font: '22', left: '670', rotation: '270'},
+  { range: '13 14 15 16', top: '680', font: '22', left: '630', rotation: '90'},
+  { range: '17 18 19 20', top: '523', font: '20', left: '664', rotation: '270'},
+  { range: '21 22 23 24', top: '523', font: '20', left: '624', rotation: '90'},
+  { range: '26 27 28 29', top: '590', font: '28', left: '500', rotation: '90'},
+ { range: '30 31 32 33', top: '590', font: '28', left: '554', rotation: '270'},
+  { range: '37 36 35 34', top: '820', font: '28', left: '460', rotation: '110'},
+  { range: '38 39 40 41', top: '720', font: '18', left: '420', rotation: '210'},
+  { range: '42 43 44 45', top: '750', font: '20', left: '395', rotation: '30'},
+  { range: '46 47 48 49', top: '800', font: '20', left: '380', rotation: '-150'},
+  { range: '50 51 52 53', top: '659', font: '20', left: '190', rotation: '198'},
+  { range: '54 55 56 57', top: '699', font: '20', left: '180', rotation: '19'},
+ { range: '59 58', top: '575', font: '20', left: '80', rotation: '122'},
+ { range: '60 61', top: '595', font: '20', left: '113', rotation: '-55'},
+ { range: '62', top: '545', font: '20', left: '172', rotation: '-55'},
+  { range: '63 64 65 66', top: '545', font: '20', left: '247', rotation: '175'},
+ { range: '67 68 69 70', top: '585', font: '20', left: '247', rotation: '-5'},
+]
+const numplace = document.getElementsByClassName("numplace")[0];
+var arrayLength = nums.length;
+for (var i = 0; i < arrayLength; i++) {
+numplace.innerHTML += '<div class = "num num_0' + i + '"><span style="font-size:' + nums[i].font + 'px;background-image:url(img/bgdist.png);background-size:457px 145px;background-repeat:repeat;position:fixed;top:' + nums[i].top + 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation + 'deg)">' + nums[i].range + '</span></div>'
+}
+</script>
+    </body>
+</html>

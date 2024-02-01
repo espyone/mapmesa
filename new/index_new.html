@@ -1,0 +1,307 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubki&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=300, initial-scale=0.6, user-scalable=yes">
+  <link rel="stylesheet" href="gatecode.css">
+  <link rel="stylesheet" href="newname.css">
+  <style>
+  #creatorbox{
+  z-index:9;
+  border-radius:7px;
+  font-family:'Krona One';
+  text-transform: uppercase;
+  font-size:12px;
+  background-color:#d35f64;
+  opacity:.95;
+  padding-top:1px;
+  padding-bottom:1px;
+  padding-right:25px;
+  padding-left:25px;
+  position:fixed;
+  bottom:80px;
+  left:55px;
+  transform:rotate(0deg);
+
+  }
+  body{
+    background-color:royalblue;
+  }
+  .bg {
+    position:fixed;
+    top:120px;
+    left:410px;
+    z-index:-1;
+    -webkit-mask-image:url("mask_001.png");
+    mask-image:url("mask_001.png");
+    -webkit-mask-repeat:no-repeat;
+    mask-repeat:no-repeat;
+  -webkit-mask-size:100vh 120vh;
+    mask-size:100vh 120vh;
+      transform:rotate(3deg) scale(2.39);
+    mix-blend-mode:multiply;
+  }
+  .addresses{
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+  .lSpacing {
+    padding-bottom: 90px;
+  }
+  .lSpacing2 {
+    padding-bottom: 190px;
+  }
+  .aNumber{
+    font-family:'Russo One';
+    font-size:25px;
+    color:white;
+    text-decoration:none;
+    letter-spacing:1.2px;
+    padding-left:6px;
+    box-shadow: 1.7px 5px black;
+    padding-top:3px;
+    padding-right:5px;
+    padding-bottom:3px;
+    margin-right:2px;
+    border-radius:14px 0px 0px;
+    opacity:0.9;
+    animation: bg1 27s ease-in-out .3s infinite normal;
+    text-shadow: 3px 3px blue;
+  }
+  .aPage {
+    font-family:Krona One;
+    padding-right: 2px;
+    padding-left: 2px;
+    color:white;
+    background-color:black;
+    font-size:28px;
+    letter-spacing:2.6px;
+    border-radius:0px 10px;
+    position:fixed;
+    z-index:9;
+    opacity:1;
+    right:25px;
+    top:30px;
+    animation: movearound 2.7s 0.1s 1 normal, bg1 17.3s 4.5s 23 reverse, font_ani 1.39s 0s 5 normal;
+    box-shadow: 3.9px 4px black;
+  }
+  .storeNumber {
+    font-size:13px;
+  }
+  .aStreet{
+    font-family:'Work Sans';
+    color:black;text-decoration:none;
+    font-size:25px;
+    letter-spacing:-2.1px;
+    padding-right:15px;
+    padding-top:3px;
+    padding-bottom:4px;
+    padding-left:5px;
+    border-radius:0px 10px 10px 0px;
+    margin-left:0px;
+    opacity:0.9;
+    box-shadow: 1.2px 5px black;
+    background-color:cyan;
+    background-blend-mode: multiply;
+  }
+
+
+  .aStLongname {
+    font-size:25px;
+  }
+  .aLink{
+    text-decoration: none;
+
+  }
+  a:hover{
+    text-decoration:none;
+  }
+  .aNoMap {
+    background-color: grey;
+    font-weight:100;
+  }
+  .bSpace {
+    padding-left:25px;
+ }
+ .newButton {
+   background-color:blue;
+   color:white;
+   stroke:black;
+   border-radius:6px;
+   border-color: black;
+   padding:1.7px 23px 1.4px 34px;
+   font-weight:500;
+   font-family:'Electrolize';
+   font-size:17px;
+   opacity:.8;
+   box-shadow: -2px -2px black;
+ }
+ .fin {
+       background-size:921px 522px;
+       background-position: left;
+       background-blend-mode:luminosity;
+ }
+
+  .fin {
+ }
+@keyframes bg1 {
+  0% {background-position: center center;background-color:black;}
+  29% {background-position: center top;}
+  70% {background-position: top right;}
+  100% {background-position: right left;}
+  25%  {background-color:purple;}
+  50%  {background-color:steelblue;}
+  69%  {background-color:green;}
+  100% {background-color:black;}
+}
+.aNumber {
+  background-image:url(http://mapmesa.com/img/3456NH.jpg);
+}
+
+#creatorbox {
+ animation: fade_page 3.3s 0s 1 normal;
+ z-index:9;
+}
+@keyframes fade_page {
+ 0% {opacity:0;}
+ 40% {opacity:0;}
+ 81% {opacity:1;}
+}
+
+ .storeNumber {
+  animation: movearound2 4.4s 0.3s 1 normal;
+}
+
+@keyframes movearound {
+ 0% {  right:325px;
+   top:30px;font:2px;opacity:0;}
+   1%  {top:1150px;right:350px;font-size:10px;opacity:1;transform:scale(.23);}
+   41%  {top:208px;right:220px;font-size:20px;opacity:1;transform:scale(1.8);}
+
+   73%  {top:50px;right:50px;font-size:32px;z-index:9;transform:scale(1);}
+   92%  {top:50px;right:30px;font-size:28px;z-index:9;}
+
+}
+
+
+@keyframes movearound2 {
+
+  10%  {font-size:17px;}
+  50%  {top:50px;right:50px;font-size:20px;}
+  95%  {top:50px;right:50px;font-size:14px;}
+
+}
+.aLink, .aNoMap {
+  animation: slide_in 2.5s 0s 1 normal;
+}
+@keyframes slide_in {
+  0% {position:fixed;top:2720px;left:-600px;}
+  68% {position:relative;top:1300px;left:-800px;}
+  78% {position:relative;top:1300px;left:-400px;}
+  89% {position:relative;top:00px;left:0px;}
+  97% {position:relative;top:10px;left:30px;}
+  100% {position:relative;top:00px;left:20px;}
+
+}
+.newButton {
+  animation: slippy 3.5s 2.6s 2 normal, slippy 3.5s 17.2s 2 normal, slide_in 2.5s 0s 1 normal;
+}
+@keyframes slippy {
+  0% {position:relative; right:0px;}
+  55% {position:relative; right:-100px;}
+  59% {position:relative; right:-70px;}
+  63% {position:relative; right:-100px;}
+  70% {position:relative; right:-90px;}
+  95% {position:relative; right:-30px;}
+  100% {position:relative; right:0px;}
+}
+
+.bg {
+  animation: moveit 7.5s 0s 1 reverse, moveit 15.5s 17.5s 1 reverse ;
+
+}
+@keyframes moveit {
+  3% {-webkit-mask-size:100vh 120vh;mask-size:100vh 120vh;
+    transform:rotate(5deg) scale(2.09);}
+    5% {-webkit-mask-size:109vh 129vh;mask-size:109vh 129vh;
+      transform:rotate(9deg) scale(2.319);}
+    15% {-webkit-mask-size:132vh 160vh;
+      transform:rotate(19deg) scale(2.319);}
+30% {-webkit-mask-size:430vh 190vh;mask-size:430vh 190vh;
+  transform:rotate(-15deg) scale(2.69);}
+  68%   {transform:rotate(-15deg) scale(2.87);opacity:1;}
+  100%, 0% {-webkit-mask-size:100vh 120vh;mask-size:100vh 120vh;
+    transform:rotate(-3deg) scale(2.69);}
+}
+  </style>
+</head>
+<body>
+
+  <div class="bg"><img src="large-img/8888T.jpg"></div>
+<div id="creatorbox">created, owned, designed and maintained by jeff p.</div>
+<div class="addresses" id="addressesMesa" style="display:block;">
+  <p id="aTitle"><span class= "aPage">MESA&nbsp;&nbsp;&nbsp;<span class=storeNumber>6607</span><br><span class="smallMaps">apartment maps</span></span></p>
+ <p class="lSpacing"><a class="aLink" href="2450A.html"><span class="aNumber fin">2450</span><span class="aStreet fin">Ashdale</span></a>
+  <p class="lSpacing"><span class="aNumber aNoMap">6800</span><span class="aStreet aNoMap">Austin Center</span><span class="bSpace"></span><span class="newButton gateCode_6800AustinCenter"></span>
+  <p class="lSpacing"><a class="aLink" href="8210BT.html"><span class="aNumber">8210</span><span class="aStreet">Bent Tree</span></a>
+  <p class="lSpacing"><a class="aLink" href="8405BT.html"><span class="aNumber fin fin fin">8405</span><span class="fin aStreet">Bent Tree</span></a>
+  <p class="lSpacing"><a class="aLink" href="8524B.html"><span class="aNumber fin">8524</span><span class="aStreet fin">Burnet</span></a>
+  <p class="lSpacing"><a class="aLink" href="7700NC.html"><span class="aNumber fin">7700</span><span class="aStreet aStLongname fin">North  Capital  Of  Texas</span></a><span class="bSpace"></span><span class="newButton gateCode_7700NCapitalOfTX"></span>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/8500%20N%20Cap.jpg"><span class="aNumber">8500-8559</span><span class="aStreet aStLongname">North  Capital  Of  Texas</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/9525%20N%20Cap.jpg"><span class="aNumber">9525</span><span class="aStreet aStLongname">North  Capital  Of  Texas</span></a><span class="bSpace"></span><span class="newButton gateCode_9525NCapitalOfTX"></span>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/6500%20Champion%20Grandview.jpg"><span class="aNumber">6500</span><span class="aStreet">Champion  Grandview</span></a><span class="bSpace"></span><span class="newButton gateCode_6500ChampionGrandview"></span>
+  <p class="lSpacing"><a class="aLink" href="3839DC.html"><span class="aNumber fin">3839</span><span class="aStreet fin">Dry  Creek</span></a>
+  <p class="lSpacing"><span class="aNumber aNoMap">3840</span><span class="aStreet aNoMap">Far West</span><span class="bSpace"></span><span class="newButton gateCode_3840FarWest"></span>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/7744%20Northcross.jpg"><span class="aNumber">2819</span><span class="aStreet">Foster</span></a>
+  <p class="lSpacing"><a class="aLink" href="3500G.html"><span class="aNumber fin">3500</span><span class="aStreet fin">Greystone</span></a></a><span class="bSpace"></span><span class="newButton gateCode_3500Greystone"></span>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/3524%20Greystone.jpg"><span class="aNumber">3524</span><span class="aStreet">Greystone</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/3543%20Greystone.jpg"><span class="aNumber">3543</span><span class="aStreet">Greystone</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/3600%20Greystone.jpg"><span class="aNumber">3600</span><span class="aStreet">Greystone</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/3543%20Greystone.jpg"><span class="aNumber">3607</span><span class="aStreet">Greystone</span></a>
+  <p class="lSpacing"><a class="aLink" href="6910H.html"><span class="aNumber fin">6910</span><span class="aStreet fin">Hart</span></a>
+  <p class="lSpacing"><a class="aLink" href="7201H.html"><span class="aNumber fin">7121,7201,7205</span><span class="aStreet fin">Hart</span></a><span class="bSpace"></span><span class="newButton gateCode_7205Hart"></span>
+  <p class="lSpacing"><a class="aLink" href="3456NH.html"><span class="aNumber fin">3456</span><span class="aStreet fin">North  Hills</span></a>
+  <p class="lSpacing"><a class="aLink" href="3517NH.html"><span class="aNumber fin" >3517</span><span class="aStreet fin" >North  Hills</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/9226%20Jollyville.jpg"><span class="aNumber">9226</span><span class="aStreet">Jollyville</span>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/9500%20Jollyville.jpg"><span class="aNumber">9500</span><span class="aStreet">Jollyville</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/5811%20Mesa.jpg"><span class="aNumber">5811</span><span class="aStreet">Mesa</span></a>
+  <p class="lSpacing"><a class="aLink" href="8100NM.html"><span class="aNumber">8100</span><span class="aStreet">North Mopac</span></a>
+  <p class="lSpacing"><a class="aLink" href="8200N.html"><span class="aNumber fin">8200</span><span class="aStreet fin">Neely</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/7744%20Northcross.jpg"><span class="aNumber">7744</span><span class="aStreet">Northcross</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/7685%20Northcross.jpg"><span class="aNumber">7685</span><span class="aStreet">Northcross</span></a>
+      <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/5217%20Old%20Spicewood%20Springs.jpg"><span class="aNumber">5217</span><span class="aStreet aStLongname">Old  Spicewood  Springs</span></a><span class="bSpace"></span><span class="newButton">????</span>
+      <p class="lSpacing"><a class="aLink" href="2600P.html"><span class="aNumber fin">2600</span><span class="aStreet fin">Penny</span></a>
+      <p class="lSpacing"><a class="aLink" href="2701P.html"><span class="aNumber fin">2601</span><span class="aStreet fin">Penny</span></a>
+      <p class="lSpacing"><a class="aLink" href="2701P.html"><span class="aNumber fin">2701</span><span class="aStreet fin">Penny</span></a>
+      <p class="lSpacing"><a class="aLink" href="8615R.html"><span class="aNumber fin">8615</span><span class="aStreet fin">Rockwood</span></a>
+      <p class="lSpacing"><a class="aLink" href="7801SC.html"><span class="aNumber fin">7801</span><span class="aStreet fin">Shoal  Creek</span></a>
+      <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/3809%20Spicewood%20Springs.jpg"><span class="aNumber">3809</span><span class="aStreet">Spicewood  Springs</span></a>
+      <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/4411%20Spicewood%20Springs.jpg"><span class="aNumber">4411</span><span class="aStreet">Spicewood  Springs</span></a><span class="bSpace"></span><span class="newButton gateCode_4411SpicewoodSprings"></span>
+      <p class="lSpacing"><span class="aNumber aNoMap">4711</span><span class="aStreet aNoMap">Spicewood  Springs</span><span class="bSpace"></span><span class="newButton gateCode_4711SpicewoodSprings"></span>
+      <p class="lSpacing"><a class="aLink" href="3605S.html"><span class="aNumber fin">3605</span><span class="aStreet fin">Steck</span></a><span class="bSpace"></span><span class="newButton gateCode_3605Steck"></span>
+      <p class="lSpacing"><a class="aLink" href="4021S.html"><span class="aNumber fin">4021</span><span class="aStreet fin">Steck</span></a>
+        <p class="lSpacing"><a class="aLink" href="4159S.html"><span class="aNumber">4159</span><span class="aStreet">Steck</span></a>
+          <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/8800%20Tallwood.jpg"><span class="aNumber">8800-8816</span><span class="aStreet">Tallwood</span></a>
+            <p class="lSpacing"><a class="aLink" href="8888T.html"><span class="aNumber fin">8888</span><span class="aStreet fin">Tallwood</span></a><span class="bSpace"></span><span class="newButton gateCode_8888Tallwood"></span>
+              <p class="lSpacing"><a class="aLink" href="3456NH.html"><span class="aNumber fin">6805</span><span class="aStreet fin">Wood Hollow</span></a>
+        <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/7117%20Wood%20Hollow.jpg"><span class="aNumber">7117</span><span class="aStreet">Wood  Hollow</span></a>
+          <p class="lSpacing"><a class="aLink" href="7122WH.html"><span class="aNumber">7122</span><span class="aStreet">Wood  Hollow</span></a><span class="bSpace"></span><span class="newButton gateCode_7122WoodHollow"></button>
+            <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/7202%20Wood%20Hollow.jpg"><span class="aNumber">7131,7201,7303</span><span class="aStreet">Wood  Hollow</span></a>
+  <p class="lSpacing"><a class="aLink" href="http://mapmesa.com/img/3600%20Greystone.jpg"><span class="aNumber">7600</span><span class="aStreet">Wood  Hollow</span></a>
+  <p class="lSpacing2"><a class="aLink" href="http://mapmesa.com/img/7630%20Wood%20Hollow.jpg"><span class="aNumber">7630</span><span class="aStreet">Wood  Hollow</span></a>
+</div>
+</div>
+</body>
+<script>
+
+
+
+</script>
+</html>

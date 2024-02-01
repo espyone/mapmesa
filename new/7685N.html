@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+      <link rel="stylesheet" href="new.css">
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+
+#parent_ {
+  position:fixed;
+  width:400px
+  height:900px;
+  opacity:1;
+  }
+.bgMapLarge_ {
+position:fixed;
+top:-990px;
+left:-2150px;
+transform:rotate(-167deg) scale(1.16);
+}
+  .numplace  {
+    z-index:9;
+    font-size:16px;
+    font-family:'Azeret Mono';
+    position:absolute;
+    text-shadow:.2px .5px red;}
+</style>
+  </head>
+  <body>
+<div class="address">7685 Northcross</div>
+<div class="numplace"></div>
+<div id="parent_">
+<div class="bgMapLarge_"><img src="large-img/7685N.jpg"></img></div>
+<script>
+const nums = [
+  { range: '124 123 122 121 120<br>104 103 102 101 100',
+top: '799', font: '11', left: '469', rotation: '180'},
+{ range: '125 126 127 128 129<br>105 106 107 108 109',
+top: '839', font: '11', left: '469', rotation: '0'},
+{ range: '224 223 222 221 220<br>204 203 202 201 200',
+top: '889', font: '11', left: '479', rotation: '180'},
+{ range: '225 226 227 228 229<br>205 206 207 208 209',
+top: '929', font: '11', left: '479', rotation: '0'},
+{ range: '324 323 322 321 320<br>304 303 302 301 300',
+top: '990', font: '11', left: '489', rotation: '180'},
+{ range: '325 326 327 328 329<br>305 306 307 308 309',
+top: '1029', font: '11', left: '489', rotation: '0'},
+{ range: '1024 1023 1022 1021 1020<br>1004 1003 1002 1001 1000',
+top: '347', font: '9', left: '403', rotation: '158'},
+{ range: '1025 1026 1027 1028 1029<br>1005 1006 1007 1008 1009',
+top: '379', font: '9', left: '419', rotation: '-22'},
+{ range: '824 823 822 821 820<br>804 803 802 801 800',
+top: '469', font: '9', left: '29', rotation: '-25'},
+{ range: '825 826 827 828 829<br>805 806 807 808 809',
+top: '437', font: '9', left: '13', rotation: '155'},
+{ range: '724 723 722 721 720<br>704 703 702 701 700',
+top: '530', font: '9', left: '119', rotation: '-25'},
+{ range: '725 726 727 728 729<br>705 706 707 708 709',
+top: '504', font: '9', left: '99', rotation: '155'},
+{ range: '624 623 622 621 620<br>604 603 602 601 600',
+top: '640', font: '9', left: '178', rotation: '-25'},
+{ range: '625 626 627 628 629<br>605 606 607 608 609',
+top: '604', font: '9', left: '169', rotation: '155'},
+{ range: '524 523 522 521 520<br>504 503 502 501 500',
+top: '740', font: '9', left: '218', rotation: '-13'},
+{ range: '525 526 527 528 529<br>505 506 507 508 509',
+top: '712', font: '9', left: '199', rotation: '165'},
+{ range: '425 426 427 428 429<br>405 406 407 408 409',
+top: '822', font: '9', left: '239', rotation: '85'},
+{ range: '924 923 922 921 920<br>904 903 902 901 900',
+top: '470', font: '11', left: '289', rotation: '65'},
+{ range: '925 926 927 928 929<br>905 906 907 908 909',
+top: '450', font: '11', left: '329', rotation: '245'},
+{ range: '1124 1123 1122 1121 920<br>1104 1103 1102 1101 1100',
+top: '490', font: '8', left: '449', rotation: '90'},
+{ range: '1125 1126 1127 1128 929<br>1105 1106 1107 1108 1109',
+top: '490', font: '8', left: '489', rotation: '270'},
+{ range: '424 423 422 421 420<br>404 403 402 401 400',
+top: '822', font: '9', left: '279', rotation: '-93'},
+]
+const numplace = document.getElementsByClassName("numplace")[0];
+var arrayLength = nums.length;
+for (var i = 0; i < arrayLength; i++) {
+numplace.innerHTML += '<div class = "num num_0' + i + '"><span style="font-size:' + nums[i].font + 'px;background-image:url(img/bgdist.png);background-size:457px;background-repeat:repeat;position:fixed;top:' + nums[i].top + 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation + 'deg)">' + nums[i].range + '</span></div>'
+}//numplace.innerHTML += '<div class = "num num_0' + i + '">
+
+
+
+
+// <span style="font-size:' +
+// nums[i].font +
+// 'px;background-image:url(img/bgdist.png);background-size:457px;
+// background-repeat:repeat;position:fixed;top:' + nums[i].top +
+// 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation +
+// 'deg)">' + nums[i].range + '</span></div>'
+// }
+//
+</script>
+     </body>
+ </html>

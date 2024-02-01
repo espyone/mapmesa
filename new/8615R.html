@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="color_ani.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      .bgMap {
+        position:absolute;
+        background-repeat:no-repeat;
+        transform:rotate(0deg);
+      }
+      #parent {
+        position:relative;
+        transform:scale(2.5);
+        left:700px;
+        top:-550px;
+      }
+      .address {
+        z-index:6;
+        position:fixed;
+        left:20px;
+        font-family:'Righteous';
+        font-size:64px;
+        color:white;
+        padding:0px 10px 1px 10px;
+        border-radius:5px;
+        top:20px;
+      }
+       .gatecode {
+            z-index:7;
+            position:fixed;
+            left:30px;
+            font-family:'Righteous';
+            color:white;
+            padding:0px 10px 1px 10px;
+            border-radius:9px;
+            top:90px;
+            font-size:16px;
+          }
+        .num {
+        font-family:'Azeret Mono';
+        text-shadow:.4px .3px red;
+        font-size:10px;
+        color:purple;
+        padding:0px 0px 0px 7px;
+      }
+      .address, .num , .gatecode {
+        background-image:url("img/bgdist.png");
+        background-size:457px 145px;
+        background-repeat:repeat;
+        background-color:grey;
+        opacity:1;
+}
+.x05-17 {
+position:absolute;
+left:170px;
+font-size:30px;
+letter-spacing:29.1px;
+line-height:23px;
+top:305px;
+transform:rotate(0deg);
+z-index:3;
+}
+.x22-30 {
+position:absolute;
+left:200px;
+font-size:30px;
+letter-spacing:18.1px;
+line-height:23px;
+top:485px;
+transform:rotate(180deg);
+z-index:3;
+}
+.x18-21 {
+position:absolute;
+left:420px;
+font-size:20px;
+letter-spacing:7.1px;
+line-height:18px;
+top:435px;
+transform:rotate(90deg);
+z-index:3;
+}
+.x01-04 {
+position:absolute;
+left:118px;
+font-size:20px;
+letter-spacing:7.1px;
+line-height:18px;
+top:435px;
+transform:rotate(270deg);
+z-index:4;
+}
+  </style>
+  </head>
+  <body>
+    <div class="address" style="font-family:'Righteous';">8615 Rockwood</div>
+
+    <div id="parent">
+    <div class="bgMap"><img src="img/8615R.jpg"></img></div>
+    <div class="num x01-04">301-304<br>201-204<br>101-104</div>
+    <div class="num x05-17">305-317<br>205-217<br>105-117</div>
+    <div class="num x22-30">322-330<br>222-230<br>122-130</div>
+    <div class="num x18-21">318-321<br>218-221<br>118-121</div>
+    </body>
+</html>

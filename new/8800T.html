@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+      <link rel="stylesheet" href="new.css">
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+
+#parent_ {
+  position:fixed;
+  width:400px
+  height:900px;
+  opacity:1;
+  }
+.bgMapLarge_ {
+position:fixed;
+top:-980px;
+left:-2150px;
+transform:rotate(-130deg) scale(1.14);
+}
+.x40-55  {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(180deg);
+  top:920px;
+  left:710px;}
+
+  .numplace  {
+    z-index:9;
+    font-size:16px;
+    font-family:'Azeret Mono';
+    position:relative;
+    top:-40px;
+    text-shadow:.2px .5px red;}
+</style>
+  </head>
+  <body>
+<div class="address">8801-8816 Tallwood</div>
+<div id="parent_">
+<div class="bgMapLarge_"><img src="large-img/8800T.jpg"></img></div>
+<div class="numplace"></div>
+<script>
+const nums = [
+  { range: '9 7 5 3 1',
+top: '952', font: '14', left: '729', rotation: '245'},
+{ range: '19 17 15 13 11',
+top: '1082', font: '10', left: '739', rotation: '245'},
+{ range: '12 14 16 18 20',
+top: '1092', font: '10', left: '719', rotation: '65'},
+{ range: '2 4 6 8 10',
+top: '972', font: '14', left: '689', rotation: '65'},
+{ range: '35 33 31 29 27 25 23 21',
+top: '1053', font: '10', left: '619', rotation: '245'},
+{ range: '22 24 26 28 30  32 34 36',
+top: '1068', font: '10', left: '589', rotation: '65'},
+{ range: '51 49 47 45 43 41 39 37',
+top: '1083', font: '10', left: '539', rotation: '245'},
+{ range: '38 40 42 44 46 48 50 52',
+top: '1098', font: '10', left: '519', rotation: '65'},
+{ range: '57 55 53',
+top: '1072', font: '11', left: '503', rotation: '245'},
+{ range: '83 81 79',
+top: '1172', font: '11', left: '323', rotation: '245'},
+{ range: '77 75 73',
+top: '1265', font: '11', left: '393', rotation: '245'},
+{ range: '74 76 78',
+top: '1275', font: '11', left: '363', rotation: '65'},
+{ range: '89 87 85',
+top: '1179', font: '11', left: '255', rotation: '245'},
+{ range: '95 93 91',
+top: '1249', font: '11', left: '285', rotation: '245'},
+{ range: '86 88 90',
+top: '1189', font: '11', left: '229', rotation: '65'},
+{ range: '92 94 96',
+top: '1259', font: '11', left: '259', rotation: '65'},
+{ range: '80 82 84',
+top: '1179', font: '11', left: '303', rotation: '65'},
+{ range: '65 63 61 59',
+top: '1114', font: '11', left: '438', rotation: '245'},
+{ range: '67 68 69',
+top: '1218', font: '11', left: '514', rotation: '155'},
+{ range: '70 71 72',
+top: '1248', font: '10', left: '445', rotation: '155'},
+{ range: '60 62 64 66',
+top: '1124', font: '11', left: '418', rotation: '65'},
+{ range: '54 56 58',
+top: '1082', font: '11', left: '479', rotation: '65'},
+{ range: '307 305<br>207 205<br>107 105',
+top: '1339', font: '8', left: '220', rotation: '80'},
+{ range: '303 301<br>203 201<br>103 101',
+top: '1220', font: '8', left: '200', rotation: '89'},
+{ range: '302 304<br>202 204<br>102 104',
+top: '1220', font: '8', left: '168', rotation: '269'},
+{ range: '306 308<br>206 208<br>106 108',
+top: '1333', font: '8', left: '190', rotation: '260'},
+]
+const numplace = document.getElementsByClassName("numplace")[0];
+var arrayLength = nums.length;
+for (var i = 0; i < arrayLength; i++) {
+numplace.innerHTML += '<div class = "num num_0' + i + '"><span style="font-size:' + nums[i].font + 'px;background-image:url(img/bgdist.png);background-size:457px;background-repeat:repeat;position:fixed;top:' + nums[i].top + 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation + 'deg)">' + nums[i].range + '</span></div>'
+}//numplace.innerHTML += '<div class = "num num_0' + i + '">
+
+
+
+
+// <span style="font-size:' +
+// nums[i].font +
+// 'px;background-image:url(img/bgdist.png);background-size:457px;
+// background-repeat:repeat;position:fixed;top:' + nums[i].top +
+// 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation +
+// 'deg)">' + nums[i].range + '</span></div>'
+// }
+//
+</script>
+     </body>
+ </html>

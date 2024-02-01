@@ -1,0 +1,113 @@
+<html>
+<head>
+  <link rel="stylesheet" href="color_ani.css">
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <style>
+body {
+  height:400px;
+}
+.container {
+  position:fixed;
+  width:800px;
+  height:50px;
+}
+ .title {
+  position:absolute;
+}
+.bgLargeMap {
+  position: absolute;
+  transform:rotate(-30deg) scale(.65);
+  left:-970px;
+  top:79px;
+  height:200px;
+}
+.address {
+  z-index:2;
+  position:absolute;
+  left:20px;
+  font-family:'Righteous';
+  font-size:64px;
+  color:white;
+  padding:0px 10px 1px 10px;
+  border-radius:5px;
+  top:20px;
+}
+img {
+  transform:rotate(0deg) scale(1.04);
+  position:absolute;
+  top:10px;
+  left:0px;
+}
+.num {
+  font-family:'Azeret Mono';
+  text-shadow:.2px .5px black;
+  text-shadow:.3px .5px white;
+  font-size:12px;
+  border-radius:5px;
+  padding-left:5px;
+  padding-right:2px;
+}
+.address, .num {
+  background-image:url("img/bgdist.png");
+  border-radius:5px;
+  background-size:457px 145px;
+  background-repeat:repeat;
+}
+.x26-11 {
+  color:white;
+  position:absolute;
+  left:300px;
+  font-size:20px;
+  letter-spacing:37.4px;
+  top:50px;
+  transform:rotate(-1.5deg);
+  z-index:3;
+}
+.x07-10 {
+  color:white;
+  position:absolute;
+  left:325px;
+  font-size:11px;
+  letter-spacing:7.4px;
+  top:111px;
+  transform:rotate(178deg);
+  z-index:3;
+}
+.x05-06 {
+color:white;
+position:absolute;
+left:560px;
+font-size:12px;
+letter-spacing:-1.4px;
+top:101px;
+transform:rotate(180deg);
+z-index:3;
+}
+.x04-01 {
+color:white;
+position:absolute;
+left:630px;
+font-size:12px;
+letter-spacing:1.2px;
+top:107px;
+transform:rotate(0deg);
+z-index:3;
+}
+.halfscale {
+  transform: scale(1.7);
+  left:20px;
+  top:120px;
+}
+ </style>
+</head>
+<body>
+  <div class="address">2600 Penny</div>
+<div class="container halfscale">
+<div class="bgLargeMap"><img src= "large-img/2600P.jpg"></img></div>
+<div class="num x26-11">226-21<span style="letter-spacing:1px;">1</span><br>126-11<span style="letter-spacing:1px;">1</span></div>
+<div class="num x07-10">207-21<span style="letter-spacing:1px;">0</span><br>107-11<span style="letter-spacing:1px;">0</span></div>
+<div class="num x05-06">205 20<span style="letter-spacing:1px;">6</span><br>105 10<span style="letter-spacing:1px;">6</span></div>
+<div class="num x04-01">204-20<span style="letter-spacing:1px;">1</span><br>104-10<span style="letter-spacing:1px;">1</span></div>
+</div></body>
+</html>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="color_ani.css">
+    <link rel="stylesheet" href="gatecode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      .bgMap {
+        position:relative;
+        background-image:url("img/3500G.jpg");
+        background-repeat:no-repeat;
+        background-size:840px 1200px;
+        transform:rotate(0deg) scale(1);
+
+      }
+      .map600px, body {
+        width:840px;
+        height:1200px;
+      }
+      .address {
+        z-index:3;
+        position:fixed;
+        left:20px;
+        font-family:'Righteous';
+        font-size:64px;
+        color:white;
+        padding:0px 10px 1px 10px;
+        border-radius:5px;
+        top:20px;
+      }
+      .gatecode {
+          z-index:4;
+          position:fixed;
+          left:20px;
+          font-family:'Righteous';
+          color:white;
+          padding:0px 10px 1px 10px;
+          border-radius:9px;
+          top:94px;
+        font-size:18px;
+        }
+      .num {
+        font-family:'Azeret Mono';
+        text-shadow:.1px .3px red;
+        font-size:10px;
+        padding-left:2px;
+        padding-right:2px;
+      }
+      .address, .num, .gatecode {
+        background-image:url("img/bgdist.png");
+        background-size:457px 145px;
+        background-repeat:repeat;
+w        background-color:grey;
+      }
+  
+      .x01-05 {
+    color:purple;
+    position:absolute;
+    left:455px;
+    font-size:15px;
+    letter-spacing:6.1px;
+    top:840px;
+    transform:rotate(180deg);
+    z-index:3;
+  }
+  .x06-11 {
+color:purple;
+position:absolute;
+left:225px;
+font-size:15px;
+letter-spacing:6.1px;
+top:870px;
+transform:rotate(178deg);
+z-index:3;
+}
+.x16-20 {
+color:purple;
+position:absolute;
+left:245px;
+font-size:15px;
+letter-spacing:6.1px;
+top:690px;
+transform:rotate(-1deg);
+z-index:3;
+}
+.x58-62 {
+color:purple;
+position:absolute;
+left:215px;
+font-size:15px;
+letter-spacing:6.1px;
+top:545px;
+transform:rotate(2deg);
+z-index:3;
+}
+.x66-63 {
+color:purple;
+position:absolute;
+left:215px;
+font-size:15px;
+letter-spacing:6.1px;
+top:355px;
+transform:rotate(176deg);
+z-index:3;
+}
+.x69-67 {
+color:purple;
+position:absolute;
+left:235px;
+font-size:12px;
+letter-spacing:-1.1px;
+top:275px;
+transform:rotate(178deg);
+z-index:3;
+}
+.x75-72 {
+color:purple;
+position:absolute;
+left:325px;
+font-size:15px;
+letter-spacing:6.1px;
+top:265px;
+transform:rotate(124.3deg);
+z-index:3;
+}
+.x71-70 {
+color:purple;
+position:absolute;
+left:301px;
+font-size:15px;
+letter-spacing:3.1px;
+top:220px;
+transform:rotate(125.3deg);
+z-index:3;
+}
+.x55-49 {
+color:purple;
+position:absolute;
+left:325px;
+font-size:15px;
+letter-spacing:9.1px;
+top:380px;
+padding-left:55px;
+padding-right:55px;
+transform:rotate(-56.5deg);
+z-index:3;
+}
+.x56 {
+color:purple;
+position:absolute;
+left:315px;
+font-size:15px;
+letter-spacing:6.1px;
+top:595px;
+transform:rotate(92deg);
+z-index:3;
+}
+.x48-46 {
+color:purple;
+position:absolute;
+left:492px;
+font-size:15px;
+letter-spacing:2.1px;
+top:275px;
+transform:rotate(43.1deg);
+z-index:3;
+}
+.x45-43 {
+color:purple;
+position:absolute;
+left:482px;
+font-size:15px;
+letter-spacing:2.1px;
+top:405px;
+transform:rotate(124.1deg);
+z-index:3;
+}
+.x57 {
+color:purple;
+position:absolute;
+left:245px;
+font-size:15px;
+letter-spacing:6.1px;
+top:595px;
+transform:rotate(272deg);
+z-index:3;
+}
+.x21-24 {
+color:purple;
+position:absolute;
+left:285px;
+font-size:15px;
+letter-spacing:6.1px;
+top:790px;
+transform:rotate(-270deg);
+z-index:3;
+}
+.x39-42 {
+color:purple;
+position:absolute;
+left:500px;
+font-size:15px;
+letter-spacing:6.1px;
+top:734px;
+transform:rotate(-267deg);
+z-index:3;
+}
+.x12-15 {
+color:purple;
+position:absolute;
+left:205px;
+font-size:15px;
+letter-spacing:6.1px;
+top:780px;
+transform:rotate(-90deg);
+z-index:3;
+}
+.x25-30 {
+color:purple;
+position:absolute;
+left:425px;
+font-size:15px;
+letter-spacing:6.1px;
+top:730px;
+transform:rotate(-90deg);
+z-index:3;
+}
+.x31-38a {
+color:purple;
+position:absolute;
+left:455px;
+font-size:15px;
+letter-spacing:-2.1px;
+top:635px;
+transform:rotate(-1deg);
+z-index:3;
+}
+.x31-38b {
+color:purple;
+position:absolute;
+left:455px;
+font-size:15px;
+letter-spacing:-2.1px;
+top:597px;
+transform:rotate(-181deg);
+z-index:3;
+}
+    </style>
+  </head>
+  <body>
+    <div class="bgMap"><img class="map600px"></img></div>
+    <div class="address">3500 Greystone<br><span class="gatecode">GATE CODE: <span class="gateCode_3500Greystone"></span></span></div>
+    <div class="num x01-05">201-205<br>101-105</div>
+    <div class="num x06-11">206-211<br>106-111</div>
+    <div class="num x16-20">216-220<br>116-120</div>
+    <div class="num x58-62">258-262<br>158-162</div>
+    <div class="num x66-63">266-263<br>166-163</div>
+    <div class="num x69-67">269-267<br>169-167</div>
+    <div class="num x75-72">275-272<br>175-172</div>
+    <div class="num x71-70">271 270<br>171 170</div>
+    <div class="num x55-49">255-249<br>155-149</div>
+    <div class="num x48-46">248-246<br>148-146</div>
+    <div class="num x45-43">245-243<br>145-143</div>
+    <div class="num x56">256<br>156</div>
+    <div class="num x57">257<br>157</div>
+    <div class="num x21-24">221-224<br>121-124</div>
+    <div class="num x39-42">239-242<br>139-142</div>
+    <div class="num x12-15">212-215<br>112-115</div>
+    <div class="num x25-30">225-230<br>125-130</div>
+    <div class="num x31-38a">231 233 235 237<br>131 133 135 137</div>
+    <div class="num x31-38b">238 236 234 232<br>138 136 134 132</div>
+
+    </body>
+</html>

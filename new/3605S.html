@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="color_ani.css">
+    <link rel="stylesheet" href="gatecode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style media="screen">
+    #parent {
+      position:relative;
+      transform:scale(1);
+      top:-30px;
+    }
+      .bgMap {
+        position:absolute;
+        background-repeat:no-repeat;
+        transform:rotate(0deg);
+        left:-100px;
+        z-index:3;
+      }
+      .address {
+        z-index:4;
+        position:fixed;
+        left:20px;
+        font-family:'Righteous';
+        font-size:64px;
+        color:white;
+        padding:0px 10px 1px 10px;
+        border-radius:5px;
+        top:20px;
+      }
+       .gatecode {
+            z-index:5;
+            position:fixed;
+            left:20px;
+            font-family:'Righteous';
+            color:white;
+            padding:0px 10px 1px 10px;
+            border-radius:9px;
+            top:90px;
+            font-size:16px;
+          }
+        .num {
+        font-family:'Azeret Mono';
+        text-shadow:.4px .3px red;
+        font-size:10px;
+        border-radius:2px;
+        color:purple;
+        padding-left:2px;
+        padding-right:2px;
+      }
+      .address, .num , .gatecode {
+        background-image:url("img/bgdist.png");
+        border-radius:5px;
+        background-size:457px 145px;
+        background-repeat:repeat;
+        background-color:grey;
+        opacity:.8;
+}
+      .x001-004 {
+    position:absolute;
+    left:190px;
+    font-size:20px;
+    letter-spacing:-2.1px;
+    top:740px;
+    transform:rotate(0deg);
+    z-index:3;
+  }
+        .x073-076 {
+      position:absolute;
+      left:30px;
+      font-size:20px;
+      letter-spacing:4.8px;
+      top:665px;
+      transform:rotate(-90deg);
+      z-index:3;
+    }
+          .x077-080 {
+        position:absolute;
+        left:13px;
+        font-size:20px;
+        letter-spacing:6.8px;
+        top:465px;
+        transform:rotate(-90deg);
+        z-index:3;
+      }
+            .x081-084 {
+          position:absolute;
+          left:10px;
+          font-size:20px;
+          letter-spacing:6.8px;
+          top:275px;
+          transform:rotate(-90deg);
+          z-index:3;
+        }
+            .x055-056 {
+            position:absolute;
+            left:290px;
+            font-size:17px;
+            letter-spacing:-2.8px;
+            top:405px;
+            transform:rotate(-90deg);
+            z-index:3;
+          }
+              .x057-058 {
+              position:absolute;
+              left:280px;
+              font-size:17px;
+              letter-spacing:-2.8px;
+              top:295px;
+              transform:rotate(-90deg);
+              z-index:3;
+            }
+
+            .x067-068 {
+            position:absolute;
+            left:680px;
+            font-size:17px;
+            letter-spacing:-2.8px;
+            top:385px;
+            transform:rotate(-90deg);
+            z-index:3;
+          }
+              .x069-070 {
+              position:absolute;
+              left:680px;
+              font-size:17px;
+              letter-spacing:-2.8px;
+              top:275px;
+              transform:rotate(-90deg);
+              z-index:3;
+            }
+            .x064-063 {
+            position:absolute;
+            left:620px;
+            font-size:17px;
+            letter-spacing:-2.8px;
+            top:385px;
+            transform:rotate(90deg);
+            z-index:3;
+          }
+          .x066-065 {
+          position:absolute;
+          left:610px;
+          font-size:17px;
+          letter-spacing:-2.8px;
+          top:275px;
+          transform:rotate(90deg);
+          z-index:3;
+      }
+      .x052-051 {
+      position:absolute;
+      left:225px;
+      font-size:17px;
+      letter-spacing:-2.8px;
+      top:405px;
+      transform:rotate(90deg);
+      z-index:3;
+    }
+    .x049-050 {
+    position:absolute;
+    left:181px;
+    font-size:17px;
+    letter-spacing:-2.8px;
+    top:350px;
+    transform:rotate(-90deg);
+    z-index:3;
+  }
+  .x061-062 {
+  position:absolute;
+  left:575px;
+  font-size:17px;
+  letter-spacing:-2.8px;
+  top:350px;
+  transform:rotate(-90deg);
+  z-index:3;
+}
+.x072-071 {
+position:absolute;
+left:725px;
+font-size:17px;
+letter-spacing:-2.8px;
+top:340px;
+transform:rotate(90deg);
+z-index:3;
+}
+.x060-059 {
+position:absolute;
+left:327px;
+font-size:16px;
+letter-spacing:-2.8px;
+top:355px;
+transform:rotate(90deg);
+z-index:2;
+}
+    .x054-053 {
+    position:absolute;
+    left:220px;
+    font-size:17px;
+    letter-spacing:-2.8px;
+    top:295px;
+    transform:rotate(90deg);
+    z-index:3;
+}
+              .x020-017 {
+      position:absolute;
+      left:190px;
+      font-size:20px;
+      letter-spacing:-3.1px;
+      top:570px;
+      transform:rotate(180deg);
+      z-index:3;
+    }
+          .x041-044 {
+        position:absolute;
+        left:240px;
+        font-size:20px;
+        letter-spacing:-1.1px;
+        top:480px;
+        transform:rotate(-0.125deg);
+        z-index:3;
+      }
+            .x085-092 {
+          position:absolute;
+          left:200px;
+          font-size:20px;
+          letter-spacing:5.1px;
+          top:115px;
+          transform:rotate(-0.125deg);
+          z-index:3;
+        }
+              .x093-100 {
+            position:absolute;
+            left:385px;
+            font-size:20px;
+            letter-spacing:3.6px;
+            top:110px;
+            transform:rotate(-2.125deg);
+            z-index:3;
+          }
+                .x101-108 {
+              position:absolute;
+              left:560px;
+              font-size:20px;
+              letter-spacing:1.2px;
+              top:110px;
+              transform:rotate(-2.125deg);
+              z-index:3;
+            }
+                  .x109-116 {
+                position:absolute;
+                left:700px;
+                font-size:20px;
+                letter-spacing:2.2px;
+                top:110px;
+                transform:rotate(-2.125deg);
+                z-index:3;
+              }
+                    .x117-122 {
+                  position:absolute;
+                  left:810px;
+                  font-size:16px;
+                  letter-spacing:2.2px;
+                  top:160px;
+                  transform:rotate(88.125deg);
+                  z-index:3;
+                }
+                .x123-126 {
+              position:absolute;
+              left:820px;
+              font-size:16px;
+              letter-spacing:2.2px;
+              line-height:19px;
+              top:335px;
+              transform:rotate(88.125deg);
+              z-index:3;
+            }
+             .x127-130 {
+            position:absolute;
+            left:835px;
+            font-size:14px;
+            letter-spacing:2.2px;
+            line-height:19px;
+            top:535px;
+            transform:rotate(88.125deg);
+            z-index:3;
+          }
+          .x131-134 {
+        position:absolute;
+        left:835px;
+        font-size:16px;
+        letter-spacing:2.2px;
+        line-height:19px;
+        top:715px;
+        transform:rotate(88.125deg);
+        z-index:3;
+      }
+            .x045-048 {
+          position:absolute;
+          left:640px;
+          font-size:20px;
+          letter-spacing:4.1px;
+          top:470px;
+          transform:rotate(-4.125deg);
+          z-index:3;
+        }
+          .x024-021 {
+        position:absolute;
+        left:295px;
+        font-size:20px;
+        letter-spacing:-3.3px;
+        top:570px;
+        transform:rotate(180deg);
+        z-index:3;
+      }
+            .x036-033 {
+          position:absolute;
+          left:635px;
+          font-size:21px;
+          letter-spacing:-5.1px;
+          top:550px;
+          transform:rotate(187deg);
+          z-index:3;
+        }
+              .x040-037 {
+            position:absolute;
+            left:735px;
+            font-size:20px;
+            letter-spacing:-5.3px;
+            top:565px;
+            transform:rotate(187deg);
+            z-index:3;
+          }
+        .x005-008 {
+      position:absolute;
+      left:300px;
+      font-size:22px;
+      letter-spacing:-2.1px;
+      top:740px;
+      transform:rotate(0deg);
+      z-index:3;
+    }
+          .x025-028 {
+        position:absolute;
+        left:360px;
+        font-size:22px;
+        letter-spacing:2.7px;
+        top:640px;
+        transform:rotate(-75deg);
+        z-index:3;
+      }
+            .x032-029 {
+          position:absolute;
+          left:478px;
+          font-size:22px;
+          letter-spacing:2.7px;
+          top:640px;
+          transform:rotate(77deg);
+          z-index:3;
+        }
+          .x009-012 {
+        position:absolute;
+        left:610px;
+        font-size:20px;
+        letter-spacing:-2.1px;
+        top:730px;
+        transform:rotate(07deg);
+        z-index:3;
+      }
+            .x013-016 {
+          position:absolute;
+          left:720px;
+          font-size:20px;
+          letter-spacing:-3.1px;
+          top:750px;
+          transform:rotate(10deg);
+          z-index:3;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="address" style="font-family:'Righteous';">3605 Steck<br><span class="gatecode">GATE CODE: <span class="gateCode_3605Steck"></span></span></div>
+      <div id="parent">
+    <div class="bgMap"><img src="img/3605S.jpg"></img></div>
+    <div class="num x001-004">1001-1004</div>
+    <div class="num x020-017">1020-1017</div>
+    <div class="num x041-044">2041-2044<br>1041-1044</div>
+    <div class="num x085-092">2085-2092<br>1085-1092</div>
+    <div class="num x093-100">2093-2100<br>1093-1100</div>
+    <div class="num x101-108">2101-2108<br>1101-1108</div>
+    <div class="num x109-116">2109-2116<br>1109-1116</div>
+    <div class="num x117-122">2117-2122<br>1117-1122</div>
+    <div class="num x123-126">2123-2126<br>1123-1126</div>
+    <div class="num x127-130">2127-2130<br>1127-1130</div>
+    <div class="num x131-134">2131-2140<br>1131-1140</div>
+    <div class="num x073-076">2073-2076<br>1073-1076</div>
+    <div class="num x077-080">2077-2080<br>1077-1080</div>
+    <div class="num x081-084">2081-2084<br>1081-1084</div>
+    <div class="num x055-056">2055 2056<br>1055 1056</div>
+    <div class="num x057-058">2057 2058<br>1057 1058</div>
+    <div class="num x067-068">2067 2068<br>1067 1068</div>
+    <div class="num x069-070">2069 2070<br>1069 1070</div>
+    <div class="num x066-065">2066 2065<br>1066 1065</div>
+    <div class="num x064-063">2064 2063<br>1064 1063</div>
+    <div class="num x054-053">2054 2053<br>1054 1053</div>
+    <div class="num x052-051">2052 2051<br>1052 1051</div>
+    <div class="num x049-050">2049 2050<br>1049 1050</div>
+    <div class="num x061-062">2061 2062<br>1061 1062</div>
+    <div class="num x072-071">2072 2071<br>1072 1071</div>
+    <div class="num x060-059">2060 2059<br>1060 1059</div>
+    <div class="num x045-048">2045-2048<br>1045-1048</div>
+    <div class="num x024-021">1024-1021</div>
+    <div class="num x036-033">1036-1033</div>
+    <div class="num x040-037">1040-1037</div>
+    <div class="num x005-008">1005-1008</div>
+    <div class="num x025-028">1025-1028</div>
+    <div class="num x032-029">1032-1029</div>
+    <div class="num x009-012">1009-1012</div>
+    <div class="num x013-016">1013-1016</div>
+    </body>
+</html>

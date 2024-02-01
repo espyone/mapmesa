@@ -1,0 +1,28 @@
+.gateCode_6800AustinCenter:before {content: "#6800"}
+.gateCode_9525NCapitalOfTX:before {content: "4332"}
+.gateCode_6500ChampionGrandview:before {content: "#6500"}
+.gateCode_3840FarWest:before {content: "2671"}
+.gateCode_3500Greystone:before {content: "1810"}
+.gateCode_4411SpicewoodSprings:before {content: "6300"}
+.gateCode_4711SpicewoodSprings:before {content: "1731"}
+.gateCode_3605Steck:before {content: "1810"}
+.gateCode_8888Tallwood:before {content: "4283"}
+.gateCode_7122WoodHollow:before {content: "4950"}
+.gateCode_7700NCapitalOfTX:before {content: "#2016"}
+.gateCode_7205Hart:before {content: "1001"}
+
+
+.gatecode {
+    opacity:1;
+    position:fixed;
+    left:20px;
+    font-family:'Righteous';
+    color:white;
+    padding:0px 10px 1px 10px;
+    border-radius:9px;
+    background-image:url("img/bgdist.png");
+    top:91px;
+    font-size:28px
+    background-size:457px 145px;
+    background-repeat:repeat;
+  }
