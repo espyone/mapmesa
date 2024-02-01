@@ -1,0 +1,32 @@
+.address , .num {
+  background-image:url("img/bgdist.png");
+  background-size:457px 145px;
+  background-repeat:repeat;z-index:2;
+  left:20px;
+  font-size:64px;
+  color:white;
+  top:20px;
+  z-index:3;
+}
+.address {
+  font-family:'Righteous';
+  border-radius:5px;
+  opacity:1;
+  padding:0px 10px 1px 10px;
+  position:fixed;
+}
+.num {
+font-family:'Azeret Mono';
+text-shadow:.2px .5px red;
+font-size:12px;
+position:absolute;
+}
+#parent {
+  position:fixed;
+  width:1200px
+  height:1600px;
+  opacity:1;
+
+  }
+  .bgMapLarge {
+    position:fixed;}
