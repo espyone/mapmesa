@@ -1,0 +1,32 @@
+.address, .address_b, .address_a, .gatecode {
+  animation: color_ani 27s ease-in-out .3s infinite normal, num_fade 2.2s ease-in-out 0s 1 normal;
+
+}
+#parent, .bgMap, .container {
+animation: num_fade 2.2s ease-in-out 0s 1 normal;
+}
+.num {
+animation: numColor_ani 12.2s ease-in-out .3s infinite normal,
+num_fade 4.2s ease-in-out 0s 1 normal;
+}
+
+@keyframes color_ani {
+  0%   {color:white; }
+  15%  {color:yellow; }
+  35%  {color:steelblue; }
+  55%  {color:green;}
+  75% {color:firebrick;}
+}
+
+@keyframes numColor_ani {
+  0%   {color:white; }
+  30% {color:white;}
+  55%  {color:black;}
+  85%  {color:black;}
+  100% {color:white;}
+}
+@keyframes num_fade {
+  0% {opacity:0;}
+  90% {opacity:.9;}
+  100% {opacity:1;}
+}

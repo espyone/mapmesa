@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      .bgMap {
+        position:relative;
+        background-image:url("img/3456NH.jpg");
+        background-repeat:no-repeat;
+        background-size:1200px 900px;
+        transform:rotate(0deg) scale(1);
+        width:1250px;
+        height:900px;
+        position:relative;
+      }
+      .address {
+        z-index:6;
+        position:fixed;
+        font-family:'Righteous';
+        font-size:64px;
+        color:white;
+        left:680px;
+        padding:0px 10px 1px 10px;
+        border-radius:5px;
+      }
+      .gatecode {
+          z-index:6;
+          position:fixed;
+          font-family:'Righteous';
+          color:white;
+          padding:0px 10px 1px 10px;
+          border-radius:9px;
+          top:85px;
+          left:680px;
+          font-size:28px;
+        }
+        .address_b {
+          z-index:6;
+          position:fixed;
+          font-family:'Righteous';
+          font-size:64px;
+          left: 20px;
+          color:white;
+          padding:0px 10px 1px 10px;
+          border-radius:5px;
+        }
+        .gatecode2 {
+            z-index:6;
+            position:fixed;
+            font-family:'Righteous';
+            color:white;
+            border-radius:9px;
+            left:20px;
+            padding:0px 10px 1px 10px;
+            top:205px;
+          font-size:28px;
+          }
+        .num {
+        font-family:'Azeret Mono';
+        text-shadow:.1px .3px red;
+        font-size:10px;
+      }
+      .address, .num, .gatecode, .address_b, .gatecode2 {
+        background-image:url("img/bgdist.png");
+
+        background-size:457px 145px;
+        background-repeat:repeat;
+                background-color:grey;
+        opacity:1;
+      }
+
+      .nh, .gatecode {
+        color:yellow;
+        background-color:blue;
+        opacity:1;
+      }
+      .wh, .gatecode2 {
+        color:black;
+        text-shadow:.1px .3px black;
+        background-color:brown;
+        opacity:1;
+      }
+      .nh2a {
+    position:absolute;
+    left:940px;
+    font-size:10px;
+    letter-spacing:3.1px;
+    top:700px;
+    transform:rotate(270deg);
+    z-index:3;
+  }
+  .nh1a {
+position:absolute;
+left:675px;
+font-size:15px;
+letter-spacing:-1.1px;
+top:630px;
+transform:rotate(180deg);
+z-index:3;
+}
+.nh1b {
+position:absolute;
+left:675px;
+font-size:15px;
+letter-spacing:-1.1px;
+top:667px;
+transform:rotate(0deg);
+z-index:3;
+}
+.nh9a {
+position:absolute;
+left:845px;
+font-size:14px;
+letter-spacing:-2.1px;
+top:697px;
+transform:rotate(182deg);
+z-index:3;
+}
+.nh9b {
+  position:absolute;
+  left:845px;
+  font-size:14px;
+  letter-spacing:-2.1px;
+  top:729px;
+  transform:rotate(2deg);
+  z-index:3;
+  }
+  .nh2b {
+position:absolute;
+left:915px;
+font-size:10px;
+letter-spacing:3.1px;
+top:700px;
+transform:rotate(90deg);
+z-index:3;
+}
+.nh3a {
+position:absolute;
+left:880px;
+font-size:10px;
+letter-spacing:1.7px;
+top:580px;
+transform:rotate(185deg);
+z-index:3;
+}
+.nh3b {
+position:absolute;
+left:880px;
+font-size:10px;
+letter-spacing:1.7px;
+top:610px;
+transform:rotate(5deg);
+z-index:3;
+}
+.nh6a {
+position:absolute;
+left:870px;
+font-size:10px;
+letter-spacing:-.4px;
+top:503px;
+transform:rotate(4deg);
+z-index:3;
+}
+.nh6b {
+position:absolute;
+left:875px;
+font-size:10px;
+letter-spacing:-.4px;
+top:463px;
+transform:rotate(184deg);
+z-index:3;
+}
+.nh7a {
+position:absolute;
+left:705px;
+font-size:10px;
+letter-spacing:-.4px;
+top:495px;
+transform:rotate(4deg);
+z-index:3;
+}
+.nh7b {
+position:absolute;
+left:705px;
+font-size:10px;
+letter-spacing:-.4px;
+top:455px;
+transform:rotate(184deg);
+z-index:3;
+}
+.nh8a {
+position:absolute;
+left:705px;
+font-size:10px;
+letter-spacing:1.4px;
+top:380px;
+transform:rotate(183.3deg);
+z-index:3;
+}
+.nh8b {
+position:absolute;
+left:705px;
+font-size:10px;
+letter-spacing:1.4px;
+top:410px;
+transform:rotate(3.3deg);
+z-index:3;
+}
+.nh5a {
+position:absolute;
+left:775px;
+font-size:7px;
+letter-spacing:5.4px;
+top:580px;
+transform:rotate(271.3deg);
+z-index:3;
+}
+.nh5b {
+position:absolute;
+left:745px;
+font-size:7px;
+letter-spacing:5.4px;
+top:575px;
+transform:rotate(91.3deg);
+z-index:3;
+}
+.wh3a {
+position:absolute;
+left:525px;
+font-size:18px;
+letter-spacing:5.4px;
+line-height: 14px;
+top:645px;
+transform:rotate(1.66deg);
+z-index:3;
+}
+.wh3b {
+position:absolute;
+left:525px;
+font-size:18px;
+letter-spacing:5.4px;
+line-height: 14px;
+top:613px;
+transform:rotate(182.66deg);
+z-index:3;
+}
+.wh2b {
+position:absolute;
+left:242px;
+font-size:16px;
+letter-spacing:1.4px;
+line-height: 12px;
+top:653px;
+transform:rotate(271.66deg);
+z-index:3;
+}
+.wh2a {
+position:absolute;
+left:215px;
+font-size:16px;
+letter-spacing:1.4px;
+line-height: 12px;
+top:653px;
+transform:rotate(92.66deg);
+z-index:3;
+}
+.wh1b {
+position:absolute;
+left:182px;
+font-size:16px;
+letter-spacing:1.4px;
+line-height: 12px;
+top:653px;
+transform:rotate(271.66deg);
+z-index:3;
+}
+.wh1a {
+position:absolute;
+left:155px;
+font-size:16px;
+letter-spacing:1.4px;
+line-height: 12px;
+top:653px;
+transform:rotate(92.66deg);
+z-index:3;
+}
+.wh10a {
+position:absolute;
+left:193px;
+font-size:16px;
+letter-spacing:11.4px;
+line-height: 14px;
+top:139px;
+transform:rotate(.66deg);
+z-index:3;
+}
+.wh10b {
+position:absolute;
+left:186px;
+font-size:16px;
+letter-spacing:11.4px;
+line-height: 14px;
+top:111px;
+transform:rotate(181.66deg);
+z-index:3;
+}
+.wh7a {
+position:absolute;
+left:216px;
+font-size:15px;
+letter-spacing:10.4px;
+line-height: 11px;
+top:461px;
+transform:rotate(180.66deg);
+z-index:3;
+}
+.wh7b {
+position:absolute;
+left:221px;
+font-size:15px;
+letter-spacing:10.4px;
+line-height: 11px;
+top:411px;
+transform:rotate(1.66deg);
+z-index:3;
+}
+.wh8a {
+position:absolute;
+left:246px;
+font-size:15px;
+letter-spacing:10.4px;
+line-height: 11px;
+top:311px;
+transform:rotate(180.66deg);
+z-index:4;
+}
+.wh8b {
+position:absolute;
+left:261px;
+font-size:15px;
+letter-spacing:10.4px;
+line-height: 11px;
+top:261px;
+transform:rotate(1.66deg);
+z-index:3;
+}
+.wh5a {
+position:absolute;
+left:446px;
+font-size:15px;
+letter-spacing:8.4px;
+line-height: 11px;
+top:461px;
+transform:rotate(180.66deg);
+z-index:3;
+}
+.wh5b {
+position:absolute;
+left:451px;
+font-size:15px;
+letter-spacing:8.4px;
+line-height: 11px;
+top:421px;
+transform:rotate(1.66deg);
+z-index:3;
+}
+.wh9a {
+position:absolute;
+left:436px;
+font-size:15px;
+letter-spacing:8.4px;
+line-height: 11px;
+top:271px;
+transform:rotate(180.66deg);
+z-index:3;
+}
+.wh9b {
+position:absolute;
+left:441px;
+font-size:15px;
+letter-spacing:8.4px;
+line-height: 11px;
+top:221px;
+transform:rotate(1.66deg);
+z-index:3;
+}
+.wh6a {
+position:absolute;
+left:309px;
+font-size:8px;
+letter-spacing:4.4px;
+line-height: 9px;
+padding-left:50px;
+padding-right:50px;
+top:381px;
+transform:rotate(271.66deg);
+z-index:3;
+}
+.wh6b {
+position:absolute;
+left:341px;
+font-size:8px;
+letter-spacing:4.4px;
+line-height: 10px;
+padding-left:50px;
+padding-right:50px;
+top:383px;
+transform:rotate(90.66deg);
+z-index:3;
+}
+.wh4a {
+position:absolute;
+left:309px;
+font-size:8px;
+letter-spacing:4.4px;
+line-height: 9px;
+padding-left:50px;
+padding-right:50px;
+top:581px;
+transform:rotate(271.66deg);
+z-index:3;
+}
+.wh4b {
+position:absolute;
+left:341px;
+font-size:8px;
+letter-spacing:4.4px;
+line-height: 10px;
+padding-left:50px;
+padding-right:50px;
+top:583px;
+transform:rotate(90.66deg);
+z-index:3;
+}
+.container {
+  postion:fixed;
+  width: 1500px;
+  height: 2400px;
+}
+.halfscale {
+  transform:scale(1.0);
+  top:280px;
+  left:500px;
+}
+ .gatecode, .gatecode2 {
+  top:90px;
+}
+.address, .address_b {
+  top:20px;
+}
+    </style>
+  </head>
+  <body>
+     <div class="address">3456 N Hills<br>
+        <span class="gatecode">C</span></div>
+          <div class="address_b"> 6805 Wood Hollow<br>
+          <span class="gatecode2">R</span></div>
+  <div class="container halfscale">
+    <div class="bgMap"></div>
+        <div class="num nh1a nh">204 203<br>104 103</div>
+        <div class="num nh1b nh">201 202<br>101 102</div>
+        <div class="num nh9a nh">264 263<br>164 163</div>
+        <div class="num nh9b nh">261 262<br>161 162</div>
+        <div class="num nh2a nh">208 206<br>108 106</div>
+        <div class="num nh2b nh">205 207<br>105 107</div>
+        <div class="num nh3a nh">212 211 216 215<br>112 111 116 115</div>
+        <div class="num nh3b nh">213 214 209 210<br>113 114 109 110</div>
+        <div class="num nh5a nh">324 322 320 318<br>224 222 220 218<br>124 122 120 118</div>
+        <div class="num nh5b nh">317 319 321 323<br>217 219 221 223<br>117 119 121 123</div>
+        <div class="num nh6a nh">333 334 335 336<br>233 234 235 236<br>133 134 135 136</div>
+        <div class="num nh6b nh">332 331 330 329<br>232 231 230 229<br>132 131 130 129</div>
+        <div class="num nh7a nh">345 346 347 348<br>245 246 247 248<br>145 146 147 148</div>
+        <div class="num nh7b nh">344 343 342 341<br>244 243 242 241<br>144 143 142 141</div>
+        <div class="num nh8a nh">258 257 254 253<br>158 157 154 153</div>
+        <div class="num nh8b nh">255 256 259 260<br>155 156 159 160</div>
+        <div class="num wh3a wh">225-228<br>125-128</div>
+        <div class="num wh3b wh">229-232<br>129-132</div>
+        <div class="num wh2b wh">207 208<br>107 108</div>
+        <div class="num wh2a wh">205 206<br>105 106</div>
+        <div class="num wh1b wh">203 204<br>103 104</div>
+        <div class="num wh1a wh">202 201<br>102 101</div>
+        <div class="num wh10a wh">268-271<br>168-171</div>
+        <div class="num wh10b wh">272-275<br>172-175</div>
+        <div class="num wh7a wh">312-309<br>212-209<br>112-109</div>
+        <div class="num wh7b wh">316-313<br>216-213<br>116-113</div>
+        <div class="num wh8a wh">363-360<br>263-260<br>163-160</div>
+        <div class="num wh8b wh">367-364<br>267-264<br>167-164</div>
+        <div class="num wh5a wh">336-333<br>236-233<br>136-133</div>
+        <div class="num wh5b wh">340-337<br>240-237<br>140-137</div>
+        <div class="num wh9a wh">353-349<br>253-249<br>153-149</div>
+        <div class="num wh9b wh">358-354<br>258-254<br>158-154</div>
+        <div class="num wh6a wh">348-345<br>248-245<br>148-145</div>
+        <div class="num wh6b wh">344-341<br>244-241<br>144-141</div>
+        <div class="num wh4a wh">320-317<br>220-217<br>120-117</div>
+        <div class="num wh4b wh">324-321<br>224-221<br>124-121</div>
+  </body>
+</html>

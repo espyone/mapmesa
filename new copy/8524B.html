@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+<style>
+  .num {
+    position:relative;
+  }
+  .numBG {background-image:url('img/bgdist.png');
+  background-color:grey;
+  background-size:457px 145px;
+  background-repeat:repeat;
+}
+.bgMapLarge {
+  position:absolute;
+  z-index:1;
+  transform:rotate(62deg) scale(1.89);
+  left:-1620px;
+  top:210px;
+}
+.address {
+  z-index:2;
+  position:absolute;
+  left:20px;
+  font-family:'Righteous';
+  font-size:64px;
+  color:white;
+  padding:0px 10px 1px 10px;
+  border-radius:5px;
+  top:20px;
+}
+.container {
+  position: fixed;
+  width: 1600px;
+  height: 2000px;
+}
+.halfscale {
+  transform:scale(.88);
+  left:30px;
+  top:-60px;
+}
+</style>
+  </head>
+
+  <body>
+  <div class="address"></div>
+  <div class="container halfscale">
+  <div class="bgMapLarge"><img src="large-img/8524B.jpg"></img></div>
+  <div class="num">
+    <div class="numBG x6a"></div>
+    <div class="numBG x6b"></div>
+    <div class="numBG x10a"></div>
+    <div class="numBG x10b"></div>
+    <div class = "numBG x5a"></div>
+  <div class = "numBG x5b"></div>
+  <div class = "numBG x5c"></div>
+    <div class = "numBG x5d"></div>
+    <div class = "numBG x2a"></div>
+  <div class = "numBG x2b"></div>
+  <div class = "numBG x2c"></div>
+    <div class = "numBG x2d"></div>
+    <div class = "numBG x7a"></div>
+    <div class = "numBG x7b"></div>
+    <div class = "numBG x7c"></div>
+      <div class = "numBG x7d"></div>
+      <div class = "numBG x9a"></div>
+      <div class = "numBG x9b"></div>
+      <div class = "numBG x9c"></div>
+        <div class = "numBG x9d"></div>
+        <div class = "numBG x11a"></div>
+        <div class = "numBG x11b"></div>
+        <div class = "numBG x11c"></div>
+          <div class = "numBG x11d"></div>
+          <div class = "numBG x8a"></div>
+          <div class = "numBG x8b"></div>
+          <div class = "numBG x8c"></div>
+            <div class = "numBG x8d"></div>
+            <div class = "numBG x8e"></div>
+              <div class = "numBG x8f"></div>
+              <div class = "numBG x1a"></div>
+              <div class = "numBG x1b"></div>
+              <div class = "numBG x1c"></div>
+                <div class = "numBG x1d"></div>
+                <div class = "numBG x1e"></div>
+                  <div class = "numBG x1f"></div>
+                  <div class = "numBG x12a"></div>
+              <div class = "numBG x12b"></div>
+              <div class = "numBG x12c"></div>
+                <div class = "numBG x12d"></div>
+                <div class = "numBG x12e"></div>
+                  <div class = "numBG x12f"></div>
+    <div class = "numBG x4a"></div>
+    <div class = "numBG x4b"></div>
+    <div class = "numBG x4c"></div>
+      <div class = "numBG x4d"></div>
+      <div class = "numBG x3a"></div>
+    <div class = "numBG x3b"></div>
+    <div class = "numBG x3c"></div>
+      <div class = "numBG x3d"></div>
+    <script>const body = document.body
+    const address = document.getElementsByClassName("address")[0]
+    const num = document.getElementsByClassName("num")[0]
+    const numBG = document.getElementsByClassName("numBG")[0]
+    const x6a = document.getElementsByClassName("x6a")[0]
+    const x6b = document.getElementsByClassName("x6b")[0]
+    const x10a = document.getElementsByClassName("x10a")[0]
+    const x10b = document.getElementsByClassName("x10b")[0]
+    const x5a = document.getElementsByClassName("x5a")[0]
+    const x5b = document.getElementsByClassName("x5b")[0]
+    const x5c = document.getElementsByClassName("x5c")[0]
+    const x5d = document.getElementsByClassName("x5d")[0]
+    const x2a = document.getElementsByClassName("x2a")[0]
+    const x2b = document.getElementsByClassName("x2b")[0]
+    const x2c = document.getElementsByClassName("x2c")[0]
+    const x2d = document.getElementsByClassName("x2d")[0]
+    const x3a = document.getElementsByClassName("x3a")[0]
+    const x3b = document.getElementsByClassName("x3b")[0]
+    const x3c = document.getElementsByClassName("x3c")[0]
+    const x3d = document.getElementsByClassName("x3d")[0]
+    const x4a = document.getElementsByClassName("x4a")[0]
+    const x4b = document.getElementsByClassName("x4b")[0]
+    const x4c = document.getElementsByClassName("x4c")[0]
+    const x4d = document.getElementsByClassName("x4d")[0]
+    const x7a = document.getElementsByClassName("x7a")[0]
+    const x7b = document.getElementsByClassName("x7b")[0]
+    const x7c = document.getElementsByClassName("x7c")[0]
+    const x7d = document.getElementsByClassName("x7d")[0]
+    const x9a = document.getElementsByClassName("x9a")[0]
+    const x9b = document.getElementsByClassName("x9b")[0]
+    const x9c = document.getElementsByClassName("x9c")[0]
+    const x9d = document.getElementsByClassName("x9d")[0]
+    const x11a = document.getElementsByClassName("x11a")[0]
+    const x11b = document.getElementsByClassName("x11b")[0]
+    const x11c = document.getElementsByClassName("x11c")[0]
+    const x11d = document.getElementsByClassName("x11d")[0]
+    const x8a = document.getElementsByClassName("x8a")[0]
+    const x8b = document.getElementsByClassName("x8b")[0]
+    const x8c = document.getElementsByClassName("x8c")[0]
+    const x8d = document.getElementsByClassName("x8d")[0]
+    const x8e = document.getElementsByClassName("x8e")[0]
+    const x8f = document.getElementsByClassName("x8f")[0]
+    const x1a = document.getElementsByClassName("x1a")[0]
+    const x1b = document.getElementsByClassName("x1b")[0]
+    const x1c = document.getElementsByClassName("x1c")[0]
+    const x1d = document.getElementsByClassName("x1d")[0]
+    const x1e = document.getElementsByClassName("x1e")[0]
+    const x1f = document.getElementsByClassName("x1f")[0]
+    const x12a = document.getElementsByClassName("x12a")[0]
+    const x12b = document.getElementsByClassName("x12b")[0]
+    const x12c = document.getElementsByClassName("x12c")[0]
+    const x12d = document.getElementsByClassName("x12d")[0]
+    const x12e = document.getElementsByClassName("x12e")[0]
+    const x12f = document.getElementsByClassName("x12f")[0]
+
+
+    body.style.backgroundRepeat = "no-repeat"
+    address.style.backgroundImage = "url('img/bgdist.png')";
+    numBG.style.backgroundColor = "grey"
+    address.style.backgroundColor = "grey"
+    address.append("8524 Burnet")
+
+    x6a.innerHTML = "622 621<br>612 611"
+    x6a.style.position = "absolute"
+    x6a.style.transform = "rotate(270deg)"
+    x6a.style.fontSize = "15px"
+    x6a.style.left = "160px"
+    x6a.style.top = "135px"
+
+    x6b.innerHTML = "623 624<br>613 614"
+    x6b.style.position = "absolute"
+    x6b.style.transform = "rotate(90deg)"
+    x6b.style.fontSize = "15px"
+    x6b.style.left = "200px"
+    x6b.style.top = "135px"
+
+    x10a.innerHTML = "1022 1021<br>1012 1011"
+    x10a.style.position = "absolute"
+    x10a.style.transform = "rotate(270deg)"
+    x10a.style.fontSize = "11px"
+    x10a.style.left = "570px"
+    x10a.style.top = "160px"
+
+    x10b.innerHTML = "1024 1023<br>1014 1013"
+    x10b.style.position = "absolute"
+    x10b.style.transform = "rotate(90deg)"
+    x10b.style.fontSize = "11px"
+    x10b.style.left = "620px"
+    x10b.style.top = "160px"
+
+    x5a.innerHTML = "537 538<br>527 528<br>517 518"
+    x5a.style.position = "absolute"
+    x5a.style.transform = "rotate(0deg)"
+    x5a.style.fontSize = "12px"
+    x5a.style.left = "74px"
+    x5a.style.top = "140px"
+
+    x5b.innerHTML = "535 536<br>525 526<br>515 516"
+    x5b.style.position = "absolute"
+    x5b.style.transform = "rotate(180deg)"
+    x5b.style.fontSize = "12px"
+    x5b.style.left = "74px"
+    x5b.style.top = "200px"
+
+    x5c.innerHTML = "533 534<br>523 524<br>513 514"
+    x5c.style.position = "absolute"
+    x5c.style.transform = "rotate(0deg)"
+    x5c.style.fontSize = "12px"
+    x5c.style.left = "74px"
+    x5c.style.top = "280px"
+
+    x5d.innerHTML = "531 522<br>521 522<br>511 512"
+    x5d.style.position = "absolute"
+    x5d.style.transform = "rotate(180deg)"
+    x5d.style.fontSize = "12px"
+    x5d.style.left = "74px"
+    x5d.style.top = "340px"
+
+
+    x3a.innerHTML = "327|328<br>317|318"
+    x3a.style.position = "absolute"
+    x3a.style.transform = "rotate(0deg)"
+    x3a.style.fontSize = "12px"
+    x3a.style.left = "90px"
+    x3a.style.top = "530px"
+
+    x3b.innerHTML = "325|326<br>315|316"
+    x3b.style.position = "absolute"
+    x3b.style.transform = "rotate(180deg)"
+    x3b.style.fontSize = "12px"
+    x3b.style.left = "90px"
+    x3b.style.top = "570px"
+
+    x3c.innerHTML = "323|324<br>313|314"
+    x3c.style.position = "absolute"
+    x3c.style.transform = "rotate(0deg)"
+    x3c.style.fontSize = "12px"
+    x3c.style.left = "90px"
+    x3c.style.top = "610px"
+
+    x3d.innerHTML = "321|322<br>311|312"
+    x3d.style.position = "absolute"
+    x3d.style.transform = "rotate(180deg)"
+    x3d.style.fontSize = "12px"
+    x3d.style.left = "90px"
+    x3d.style.top = "650px"
+
+
+    x12a.innerHTML = "1247 1248<br>1227 1228<br>1207 1208"
+    x12a.style.position = "absolute"
+    x12a.style.transform = "rotate(270deg)"
+    x12a.style.fontSize = "10px"
+    x12a.style.left = "586px"
+    x12a.style.top = "350px"
+
+    x12b.innerHTML = "1245 1246<br>1225 1226<br>1205 1206"
+    x12b.style.position = "absolute"
+    x12b.style.transform = "rotate(90deg)"
+    x12b.style.fontSize = "10px"
+    x12b.style.left = "631px"
+    x12b.style.top = "340px"
+
+    x12c.innerHTML = "1243 1244<br>1223 1224<br>1203 1204"
+    x12c.style.position = "absolute"
+    x12c.style.transform = "rotate(270deg)"
+    x12c.style.fontSize = "10px"
+    x12c.style.left = "676px"
+    x12c.style.top = "330px"
+
+    x12d.innerHTML = "1241 1242<br>1221 1222<br>1201 1202"
+    x12d.style.position = "absolute"
+    x12d.style.transform = "rotate(90deg)"
+    x12d.style.fontSize = "10px"
+    x12d.style.left = "720px"
+    x12d.style.top = "330px"
+
+    x12e.innerHTML = "1249 1250<br>1229 1230<br>1209 1210"
+    x12e.style.position = "absolute"
+    x12e.style.transform = "rotate(90deg)"
+    x12e.style.fontSize = "10px"
+    x12e.style.left = "543px"
+    x12e.style.top = "350px"
+
+    x12f.innerHTML = "1251 1252<br>1231 1232<br>1211 1212"
+    x12f.style.position = "absolute"
+    x12f.style.transform = "rotate(270deg)"
+    x12f.style.fontSize = "10px"
+    x12f.style.left = "500px"
+    x12f.style.top = "350px"
+
+
+    x4a.innerHTML = "437 438<br>427 428<br>417 418"
+    x4a.style.position = "absolute"
+    x4a.style.transform = "rotate(90deg)"
+    x4a.style.fontSize = "10px"
+    x4a.style.left = "250px"
+    x4a.style.top = "440px"
+
+    x4b.innerHTML = "435 436<br>425 426<br>415 416"
+    x4b.style.position = "absolute"
+    x4b.style.transform = "rotate(270deg)"
+    x4b.style.fontSize = "10px"
+    x4b.style.left = "200px"
+    x4b.style.top = "440px"
+
+    x4c.innerHTML = "433 434<br>423 424<br>413 414"
+    x4c.style.position = "absolute"
+    x4c.style.transform = "rotate(90deg)"
+    x4c.style.fontSize = "10px"
+    x4c.style.left = "125px"
+    x4c.style.top = "430px"
+
+    x4d.innerHTML = "431 432<br>421 422<br>411 412"
+    x4d.style.position = "absolute"
+    x4d.style.transform = "rotate(270deg)"
+    x4d.style.fontSize = "10px"
+    x4d.style.left = "86px"
+    x4d.style.top = "430px"
+
+
+    x7a.innerHTML = "738 737<br>728 727<br>718 717"
+    x7a.style.position = "absolute"
+    x7a.style.transform = "rotate(180deg)"
+    x7a.style.fontSize = "10px"
+    x7a.style.left = "230px"
+    x7a.style.top = "360px"
+
+    x7b.innerHTML = "736 735<br>726 725<br>716 715"
+    x7b.style.position = "absolute"
+    x7b.style.transform = "rotate(0deg)"
+    x7b.style.fontSize = "10px"
+    x7b.style.left = "230px"
+    x7b.style.top = "320px"
+
+    x7c.innerHTML = "734 733<br>724 723<br>714 713"
+    x7c.style.position = "absolute"
+    x7c.style.transform = "rotate(180deg)"
+    x7c.style.fontSize = "10px"
+    x7c.style.left = "230px"
+    x7c.style.top = "270px"
+
+    x7d.innerHTML = "732 731<br>722 721<br>712 711"
+    x7d.style.position = "absolute"
+    x7d.style.transform = "rotate(0deg)"
+    x7d.style.fontSize = "10px"
+    x7d.style.left = "230px"
+    x7d.style.top = "230px"
+
+
+    x9a.innerHTML = "928 927<br>918 917"
+    x9a.style.position = "absolute"
+    x9a.style.transform = "rotate(180deg)"
+    x9a.style.fontSize = "12px"
+    x9a.style.left = "495px"
+    x9a.style.top = "250px"
+
+    x9b.innerHTML = "926 925<br>916 915"
+    x9b.style.position = "absolute"
+    x9b.style.transform = "rotate(0deg)"
+    x9b.style.fontSize = "12px"
+    x9b.style.left = "495px"
+    x9b.style.top = "210px"
+
+    x9c.innerHTML = "924 923<br>914 913"
+    x9c.style.position = "absolute"
+    x9c.style.transform = "rotate(180deg)"
+    x9c.style.fontSize = "12px"
+    x9c.style.left = "495px"
+    x9c.style.top = "170px"
+
+    x9d.innerHTML = "922 921<br>912 911"
+    x9d.style.position = "absolute"
+    x9d.style.transform = "rotate(0deg)"
+    x9d.style.fontSize = "12px"
+    x9d.style.left = "495px"
+    x9d.style.top = "130px"
+
+    x2a.innerHTML = "228 227<br>218 217"
+    x2a.style.position = "absolute"
+    x2a.style.transform = "rotate(270deg)"
+    x2a.style.fontSize = "12px"
+    x2a.style.left = "195px"
+    x2a.style.top = "590px"
+
+    x2b.innerHTML = "226 225<br>216 215"
+    x2b.style.position = "absolute"
+    x2b.style.transform = "rotate(90deg)"
+    x2b.style.fontSize = "12px"
+    x2b.style.left = "235px"
+    x2b.style.top = "587px"
+
+    x2c.innerHTML = "224 223<br>214 213"
+    x2c.style.position = "absolute"
+    x2c.style.transform = "rotate(270deg)"
+    x2c.style.fontSize = "12px"
+    x2c.style.left = "315px"
+    x2c.style.top = "567px"
+
+    x2d.innerHTML = "222 221<br>212 211"
+    x2d.style.position = "absolute"
+    x2d.style.transform = "rotate(90deg)"
+    x2d.style.fontSize = "12px"
+    x2d.style.left = "355px"
+    x2d.style.top = "567px"
+
+
+    x11a.innerHTML = "1128|1127<br>1118|1117"
+    x11a.style.position = "absolute"
+    x11a.style.transform = "rotate(180deg)"
+    x11a.style.fontSize = "12px"
+    x11a.style.left = "700px"
+    x11a.style.top = "250px"
+
+    x11b.innerHTML = "1126|1125<br>1116|1115"
+    x11b.style.position = "absolute"
+    x11b.style.transform = "rotate(0deg)"
+    x11b.style.fontSize = "12px"
+    x11b.style.left = "700px"
+    x11b.style.top = "220px"
+
+    x11c.innerHTML = "1124|1123<br>1114|1113"
+    x11c.style.position = "absolute"
+    x11c.style.transform = "rotate(180deg)"
+    x11c.style.fontSize = "12px"
+    x11c.style.left = "700px"
+    x11c.style.top = "180px"
+
+    x11d.innerHTML = "1122|1121<br>1112|1111"
+    x11d.style.position = "absolute"
+    x11d.style.transform = "rotate(0deg)"
+    x11d.style.fontSize = "12px"
+    x11d.style.left = "700px"
+    x11d.style.top = "145px"
+
+
+    x8a.innerHTML = "828 827<br>808 807"
+    x8a.style.position = "absolute"
+    x8a.style.transform = "rotate(180deg)"
+    x8a.style.fontSize = "12px"
+    x8a.style.left = "380px"
+    x8a.style.top = "370px"
+
+    x8b.innerHTML = "826 825<br>806 805"
+    x8b.style.position = "absolute"
+    x8b.style.transform = "rotate(0deg)"
+    x8b.style.fontSize = "12px"
+    x8b.style.left = "380px"
+    x8b.style.top = "330px"
+
+    x8c.innerHTML = "824 823<br>804 803"
+    x8c.style.position = "absolute"
+    x8c.style.transform = "rotate(180deg)"
+    x8c.style.fontSize = "12px"
+    x8c.style.left = "370px"
+    x8c.style.top = "290px"
+
+    x8d.innerHTML = "822 821<br>802 801"
+    x8d.style.position = "absolute"
+    x8d.style.transform = "rotate(0deg)"
+    x8d.style.fontSize = "12px"
+    x8d.style.left = "370px"
+    x8d.style.top = "250px"
+
+    x8e.innerHTML = "832 831<br>812 811"
+    x8e.style.position = "absolute"
+    x8e.style.transform = "rotate(180deg)"
+    x8e.style.fontSize = "12px"
+    x8e.style.left = "370px"
+    x8e.style.top = "450px"
+
+    x8f.innerHTML = "830 829<br>810 809"
+    x8f.style.position = "absolute"
+    x8f.style.transform = "rotate(0deg)"
+    x8f.style.fontSize = "12px"
+    x8f.style.left = "370px"
+    x8f.style.top = "410px"
+
+    x1a.innerHTML = "128 127<br>108 107"
+    x1a.style.position = "absolute"
+    x1a.style.transform = "rotate(270deg)"
+    x1a.style.fontSize = "12px"
+    x1a.style.left = "520px"
+    x1a.style.top = "520px"
+
+    x1b.innerHTML = "126 125<br>106 105"
+    x1b.style.position = "absolute"
+    x1b.style.transform = "rotate(90deg)"
+    x1b.style.fontSize = "12px"
+    x1b.style.left = "555px"
+    x1b.style.top = "520px"
+
+    x1c.innerHTML = "124 123<br>104 103"
+    x1c.style.position = "absolute"
+    x1c.style.transform = "rotate(270deg)"
+    x1c.style.fontSize = "12px"
+    x1c.style.left = "600px"
+    x1c.style.top = "500px"
+
+    x1d.innerHTML = "122 121<br>102 101"
+    x1d.style.position = "absolute"
+    x1d.style.transform = "rotate(90deg)"
+    x1d.style.fontSize = "12px"
+    x1d.style.left = "640px"
+    x1d.style.top = "500px"
+
+    x1e.innerHTML = "130 129<br>110 109"
+    x1e.style.position = "absolute"
+    x1e.style.transform = "rotate(90deg)"
+    x1e.style.fontSize = "12px"
+    x1e.style.left = "490px"
+    x1e.style.top = "540px"
+
+    x1f.innerHTML = "132 131<br>112 111"
+    x1f.style.position = "absolute"
+    x1f.style.transform = "rotate(270deg)"
+    x1f.style.fontSize = "12px"
+    x1f.style.left = "450px"
+    x1f.style.top = "540px"
+    num.style.zIndex = "5"
+    num.style.color = "white"
+    num.style.fontFamily = "Azeret Mono"
+    </script>
+  </body>
+</html>

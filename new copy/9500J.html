@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+      <link rel="stylesheet" href="new.css">
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+
+#parent_ {
+  position:fixed;
+  width:400px
+  height:900px;
+  opacity:1;
+  }
+.bgMapLarge_ {
+position:fixed;
+top:-480px;
+left:-1990px;
+transform:rotate(-240deg) scale(.74);
+}
+.x40-55  {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(180deg);
+  top:920px;
+  left:710px;}
+
+  .numplace  {
+    z-index:9;
+    font-size:16px;
+    font-family:'Azeret Mono';
+    position:absolute;
+    text-shadow:.2px .5px red;}
+</style>
+  </head>
+  <body>
+<div class="address">9500 Jollyville</div>
+<div class="numplace"></div>
+<div id="parent_">
+<div class="bgMapLarge_"><img src="large-img/9500J.jpg"></img></div>
+<script>
+const nums = [
+      { range: '102 103',
+        top: '835', font: '7', left: '665', rotation: '240'},
+        { range: '104 105',
+                  top: '827', font: '7', left: '679', rotation: '-300'},
+                  { range: '106 107',
+          top: '802', font: '7', left: '719', rotation: '145'},
+          { range: '100 101',
+  top: '895', font: '7', left: '635', rotation: '165'},
+  { range: '208 209 210 211<br>108 109 110 111',
+top: '725', font: '9', left: '735', rotation: '55'},
+{ range: '213 214<br>113 114',
+top: '650', font: '10', left: '725', rotation: '60'},
+{ range: '116 117',
+top: '610', font: '10', left: '685', rotation: '60'},
+{ range: '118 119',
+top: '560', font: '10', left: '625', rotation: '151'},
+{ range: '170 171',
+top: '600', font: '8', left: '585', rotation: '-121'},
+{ range: '172 173',
+top: '560', font: '8', left: '545', rotation: '-121'},
+{ range: '121 122 123',
+top: '460', font: '10', left: '590', rotation: '67'},
+{ range: '120 124',
+top: '470', font: '12', left: '570', rotation: '67'},
+{ range: '125 126',
+top: '410', font: '9', left: '560', rotation: '67'},
+{ range: '127 128',
+top: '360', font: '9', left: '540', rotation: '67'},
+{ range: '130 131 132',
+top: '280', font: '10', left: '510', rotation: '67'},
+{ range: '129 133',
+top: '290', font: '12', left: '495', rotation: '62'},
+{ range: '134 135',
+top: '330', font: '10', left: '425', rotation: '-32'},
+{ range: '136 137',
+top: '355', font: '10', left: '375', rotation: '-32'},
+{ range: '140 141',
+top: '380', font: '10', left: '330', rotation: '62'},
+{ range: '138 139',
+top: '400', font: '10', left: '300', rotation: '242'},
+{ range: '142 143',
+top: '420', font: '10', left: '270', rotation: '242'},
+{ range: '144 145',
+top: '485', font: '10', left: '310', rotation: '145'},
+{ range: '246 247 248 249<br>146 147 148 149',
+top: '555', font: '10', left: '329', rotation: '237'},
+{ range: '250 251 252 253<br>150 151 152 153',
+top: '645', font: '10', left: '389', rotation: '237'},
+{ range: '254 255 256 257<br>154 155 156 157',
+top: '725', font: '10', left: '459', rotation: '147'},
+{ range: '259 260<br>159 160',
+top: '810', font: '12', left: '489', rotation: '237'},
+{ range: '258 261<br>158 161',
+top: '800', font: '9', left: '519', rotation: '237'},
+{ range: '297 296<br>197 196',
+top: '640', font: '9', left: '449', rotation: '207'},
+{ range: '198 199',
+top: '630', font: '9', left: '549', rotation: '147'},
+{ range: '268 269<br>168 169',
+top: '650', font: '9', left: '589', rotation: '57'},
+{ range: '266 267<br>166 167',
+top: '680', font: '9', left: '569', rotation: '237'},
+{ range: '293 294<br>193 194',
+top: '536', font: '8', left: '499', rotation: '57'},
+{ range: '295 292<br>195 192',
+top: '550', font: '7', left: '486', rotation: '237'},
+{ range: '275 274<br>175 174',
+top: '508', font: '9', left: '516', rotation: '57'},
+{ range: '276 277<br>176 177',
+top: '408', font: '9', left: '485', rotation: '72'},
+{ range: '278 279<br>178 179',
+top: '428', font: '9', left: '455', rotation: '252'},
+{ range: '280 287<br>180 187',
+top: '430', font: '7', left: '395', rotation: '60'},
+{ range: '281 286<br>181 186',
+top: '461', font: '7', left: '415', rotation: '240'},
+{ range: '282 285<br>182 185',
+top: '461', font: '7', left: '390', rotation: '60'},
+{ range: '284 283<br>184 183',
+top: '499', font: '7', left: '399', rotation: '240'},
+{ range: '289 288<br>189 188',
+top: '539', font: '8', left: '429', rotation: '240'},
+{ range: '291 290<br>191 190',
+top: '559', font: '7', left: '459', rotation: '60'},
+{ range: '262 263<br>162 163',
+top: '729', font: '7', left: '659', rotation: '60'},
+{ range: '264 265<br>164 165',
+top: '749', font: '7', left: '619', rotation: '155'},
+
+]
+const numplace = document.getElementsByClassName("numplace")[0];
+var arrayLength = nums.length;
+for (var i = 0; i < arrayLength; i++) {
+numplace.innerHTML += '<div class = "num num_0' + i + '"><span style="font-size:' + nums[i].font + 'px;background-image:url(img/bgdist.png);background-size:457px;background-repeat:repeat;position:fixed;top:' + nums[i].top + 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation + 'deg)">' + nums[i].range + '</span></div>'
+}//numplace.innerHTML += '<div class = "num num_0' + i + '">
+
+
+
+
+// <span style="font-size:' +
+// nums[i].font +
+// 'px;background-image:url(img/bgdist.png);background-size:457px;
+// background-repeat:repeat;position:fixed;top:' + nums[i].top +
+// 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation +
+// 'deg)">' + nums[i].range + '</span></div>'
+// }
+//
+</script>
+     </body>
+ </html>

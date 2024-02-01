@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+      <link rel="stylesheet" href="new.css">
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+<style media="screen">
+
+#parent_ {
+  position:fixed;
+  width:400px
+  height:900px;
+  opacity:1;
+  }
+.bgMapLarge_ {
+position:fixed;
+top:-480px;
+left:-1990px;
+transform:rotate(-240deg) scale(.74);
+}
+.x40-55  {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(180deg);
+  top:920px;
+  left:710px;}
+
+  .numplace  {
+    z-index:9;
+    font-size:16px;
+    font-family:'Azeret Mono';
+    position:absolute;
+    text-shadow:.2px .5px red;}
+</style>
+  </head>
+  <body>
+<div class="address">7630 Wood Hollow</div>
+<div class="numplace"></div>
+<div id="parent_">
+<div class="bgMapLarge_"><img src="large-img/7630WH.jpg"></img></div>
+<script>
+const nums = [
+  { range: '315 316 317 318 319 320<br>215 216 217 218 219 220<br>115 116 117 118 119 120',
+     top: '1060', font: '7', left: '95', rotation: '-77'},
+     { range: '307 308 309 310 311 312 313 314<br>207 208 209 210 211 212 213 214<br>107 108 109 110 111 112 113 114',
+   top: '1100', font: '7', left: '175', rotation: '-169'},
+   { range: '321 322 323 324 325 326<br>221 222 223 224 225 226<br>121 122 123 124 125 126',
+         top: '930', font: '7', left: '245', rotation: '135'},
+         { range: '306 305 304 303 302 301<br>206 205 204 203 202 201<br>106 105 104 103 102 101',
+               top: '1010', font: '8', left: '315', rotation: '270'},
+               { range: '306 305 304 303 302 301<br>206 205 204 203 202 201<br>106 105 104 103 102 101',
+                     top: '1010', font: '8', left: '315', rotation: '270'},
+           { range: '327 328 329 330 331 332<br>227 228 229 230 231 232<br>127 128 129 130 131 132',
+               top: '780', font: '8', left: '405', rotation: '301'},
+{ range: '333 334 335 336 337 338<br>233 234 235 236 237 238<br>133 134 135 136 137 138',
+                   top: '640', font: '9', left: '445', rotation: '301'},
+    { range: '338 339 341 342 343 344 345 346 347 348<br>238 239 241 242 243 244 245 246 247 248<br>138 139 141 412 143 144 145 146 147 148',
+      top: '510', font: '8.5', left: '535', rotation: '322'},
+        { range: '265 266 267 269 269 270<br>165 166 167 168 169 170',
+          top: '680', font: '7', left: '825', rotation: '67'},
+{ range: '258 259 262 264<br>158 160 162 164<br>257 259 261 263<br>157 159 161 163',
+  top: '560', font: '7', left: '790', rotation: '67'},
+  { range: '250 252 254 256<br>150 162 154 156<br>249 251 253 255<br>149 151 153 155',
+    top: '475', font: '7', left: '740', rotation: '44'},
+    { range: '385 383 381 379<br>285 283 281 279<br>185 183 181 179<br>386 384 382 380<br>286 284 282 280<br>186 184 182 180',
+      top: '635', font: '7', left: '710', rotation: '-40'},
+      { range: '271 272 273 274 275 276 277 278<br>171 172 173 174 175 176 277 278',
+        top: '750', font: '7', left: '675', rotation: '160'},
+        { range: '393 391 389 387<br>293 291 289 287<br>193 191 189 187<br>394 392 390 388<br>294 292 290 288<br>194 192 190 188',
+          top: '805', font: '7', left: '565', rotation: '-52'},
+
+]
+const numplace = document.getElementsByClassName("numplace")[0];
+var arrayLength = nums.length;
+for (var i = 0; i < arrayLength; i++) {
+numplace.innerHTML += '<div class = "num num_0' + i + '"><span style="font-size:' + nums[i].font + 'px;background-image:url(img/bgdist.png);background-size:457px;background-repeat:repeat;position:fixed;top:' + nums[i].top + 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation + 'deg)">' + nums[i].range + '</span></div>'
+}//numplace.innerHTML += '<div class = "num num_0' + i + '">
+
+
+
+
+// <span style="font-size:' +
+// nums[i].font +
+// 'px;background-image:url(img/bgdist.png);background-size:457px;
+// background-repeat:repeat;position:fixed;top:' + nums[i].top +
+// 'px;left:' + nums[i].left + 'px;transform:rotate(' + nums[i].rotation +
+// 'deg)">' + nums[i].range + '</span></div>'
+// }
+//
+</script>
+     </body>
+ </html>

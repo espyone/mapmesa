@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+    <link rel="stylesheet" href="gatecode.css">
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+<style>
+  .numBG {background-image:url('img/bgdist.png');
+  background-color:grey;background-repeat:repeat;background-size:35px 45px;
+}
+.numBG, .address, .gatecode {
+  background-image:url('img/bgdist.png');
+  z-index:5;
+  color:white;
+  font-family:'Azeret Mono';
+  background-color:grey;
+  background-color:grey;
+  background-size:457px 145px;
+  background-repeat:repeat;
+}
+    .container {
+      position:fixed;
+      width:800px;
+      height:1000px;
+  }
+  .bgLargeMap {
+    transform:rotate(240deg) scale(.95);
+      position:absolute;
+      left:-2450px;
+      top:-1750px;
+    }
+    .address {
+      z-index:2;
+      position:fixed;
+      left:20px;
+      font-family:'Righteous';
+      font-size:64px;
+      color:white;
+      padding:0px 10px 1px 10px;
+      border-radius:5px;
+      top:20px;
+    }
+    .gatecode {
+        z-index:2;
+        position:fixed;
+        left:20px;
+        font-family:'Righteous';
+        color:white;
+        padding:0px 10px 1px 10px;
+        border-radius:9px;
+        top:91px;
+        font-size:28px;
+      }
+.halfscale {
+  transform:scale(1.5);
+  left:290px;
+  top:500px;
+}
+</style>
+  </head>
+
+  <body>
+    <div class="address">7121, 7201, 7205 Hart</div>
+    <div class="gatecode">GATE CODE: <span class="gateCode_7205Hart"></span></div>
+
+  <div class="container halfscale">
+  <div class="bgLargeMap"><img src="large-img/7201H.jpg"></div>
+    <div class="num numBG a_a"></div>
+    <div class="num numBG a_b"></div>
+    <div class="num numBG a_c"></div>
+    <div class="num numBG a_d"></div>
+    <div class="num numBG a_e"></div>
+    <div class="num numBG a_f"></div>
+    <div class="num numBG c_a"></div>
+    <div class="num numBG c_b"></div>
+    <div class="num numBG c_c"></div>
+    <div class="num numBG c_d"></div>
+    <div class="num numBG c_e"></div>
+    <div class="num numBG c_f"></div>
+    <div class="num numBG b_c"></div>
+    <div class="num numBG b_d"></div>
+    <div class="num numBG b_e"></div>
+    <div class="num numBG b_f"></div>
+    <div class="num numBG b_a"></div>
+    <div class="num numBG b_b"></div>
+      <script>const body = document.body
+    const address = document.getElementsByClassName("address")[0]
+    const container = document.getElementsByClassName("container")[0]
+    const bgLargeMan = document.getElementsByClassName("bgLargeMap")[0]
+    const gatecode = document.getElementsByClassName("gatecode")[0]
+    const num = document.getElementsByClassName("num")[0]
+    const numBG = document.getElementsByClassName("numBG")[0]
+    const a_a = document.getElementsByClassName("a_a")[0]
+    const a_b = document.getElementsByClassName("a_b")[0]
+    const b_a = document.getElementsByClassName("b_a")[0]
+    const b_b = document.getElementsByClassName("b_b")[0]
+    const c_a = document.getElementsByClassName("c_a")[0]
+    const c_b = document.getElementsByClassName("c_b")[0]
+    const b_c = document.getElementsByClassName("b_c")[0]
+    const b_d = document.getElementsByClassName("b_d")[0]
+    const b_e = document.getElementsByClassName("b_e")[0]
+    const b_f = document.getElementsByClassName("b_f")[0]
+    const c_c = document.getElementsByClassName("c_c")[0]
+    const c_d = document.getElementsByClassName("c_d")[0]
+    const c_e = document.getElementsByClassName("c_e")[0]
+    const c_f = document.getElementsByClassName("c_f")[0]
+    const a_c = document.getElementsByClassName("a_c")[0]
+    const a_d = document.getElementsByClassName("a_d")[0]
+    const a_e = document.getElementsByClassName("a_e")[0]
+    const a_f = document.getElementsByClassName("a_f")[0]
+
+    a_a.innerHTML = "3001 3002 3003 3004 3005 3006 3007 3008 3009 3010 3011 3012<br>2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 2011 2012<br>1001 1002 1003 1004 1005 1006 1007 1008 1009 1010 1011 1012"
+    a_a.style.position = "absolute"
+    a_a.style.transform = "rotate(270deg)"
+    a_a.style.fontSize = "7px"
+    a_a.style.left = "-105px"
+    a_a.style.top = "500px"
+
+    a_b.innerHTML = "3044 3043 3042 3041 3040 3039 3038 3037 3036 3035 3034 3033<br>2044 2043 2042 2041 2040 2039 2038 2037 2036 2035 2034 2033<br>1044 1043 1042 1041 1040 1039 1038 1037 1036 1035 1034 1033"
+    a_b.style.position = "absolute"
+    a_b.style.transform = "rotate(90deg)"
+    a_b.style.fontSize = "7px"
+    a_b.style.left = "35px"
+    a_b.style.top = "500px"
+
+    a_c.innerHTML = "3028 3029 3030 3031 3032<br>2028 2029 2030 2031 2032<br>1028 1029 1030 1031 1032"
+    a_c.style.position = "absolute"
+    a_c.style.transform = "rotate(3deg)"
+    a_c.style.fontSize = "5.5px"
+    a_c.style.left = "52px"
+    a_c.style.top = "370px"
+
+    a_d.innerHTML = "3018 3019 3020 3021 3022<br>2018 2019 2020 2021 2022<br>1018 1019 1020 1021 1022"
+    a_d.style.position = "absolute"
+    a_d.style.transform = "rotate(3.5deg)"
+    a_d.style.fontSize = "5.4px"
+    a_d.style.left = "59px"
+    a_d.style.top = "550px"
+
+    a_e.innerHTML = "3027 3026 3025 3024 3023<br>2027 2026 2025 2024 2023<br>1027 1026 1025 1024 1023"
+    a_e.style.position = "absolute"
+    a_e.style.transform = "rotate(182deg)"
+    a_e.style.fontSize = "5.5px"
+    a_e.style.left = "52px"
+    a_e.style.top = "435px"
+
+    a_f.innerHTML = "3017 3016 3015 3014 3013<br>2017 2016 2015 2014 2013<br>1017 1016 1015 1014 1013"
+    a_f.style.position = "absolute"
+    a_f.style.transform = "rotate(183.5deg)"
+    a_f.style.fontSize = "5.5px"
+    a_f.style.left = "60px"
+    a_f.style.top = "614px"
+
+    c_a.innerHTML = "2077 2078 2079 2080 2081 2082 2083 2084 2085 2086 2087 2088<br>1077 1078 1079 1080 1081 1082 1083 1084 1085 1086 1087 1088"
+    c_a.style.position = "absolute"
+    c_a.style.transform = "rotate(0deg)"
+    c_a.style.fontSize = "8.5px"
+    c_a.style.left = "-15px"
+    c_a.style.top = "60px"
+
+    c_b.innerHTML = "2045 2046 2047 2048 2049 2050 2051 2052 20253 2054 2055 2056<br>1045 1046 1047 1048 1049 1050 1051 1052 10253 1054 1055 1056"
+    c_b.style.position = "absolute"
+    c_b.style.transform = "rotate(181deg)"
+    c_b.style.fontSize = "7.9px"
+    c_b.style.left = "-15px"
+    c_b.style.top = "210px"
+
+    c_c.innerHTML = "2057 2058 2059 2060 2061<br>1057 1058 1059 1060 1061"
+    c_c.style.position = "absolute"
+    c_c.style.transform = "rotate(270deg)"
+    c_c.style.fontSize = "5.5px"
+    c_c.style.left = "-30px"
+    c_c.style.top = "140px"
+
+    c_d.innerHTML = "2067 2068 2069 2070 2071<br>1067 1068 1069 1070 1071"
+    c_d.style.position = "absolute"
+    c_d.style.transform = "rotate(271deg)"
+    c_d.style.fontSize = "5.5px"
+    c_d.style.left = "165px"
+    c_d.style.top = "130px"
+
+    c_e.innerHTML = "2066 2065 2064 2063 2062<br>1066 1065 1064 1063 1062"
+    c_e.style.position = "absolute"
+    c_e.style.transform = "rotate(90deg)"
+    c_e.style.fontSize = "5.5px"
+    c_e.style.left = "33px"
+    c_e.style.top = "140px"
+
+    c_f.innerHTML = "2076 2075 2074 2073 2072<br>1076 1075 1074 1073 1072"
+    c_f.style.position = "absolute"
+    c_f.style.transform = "rotate(90deg)"
+    c_f.style.fontSize = "5.5px"
+    c_f.style.left = "215px"
+    c_f.style.top = "135px"
+
+
+    b_c.innerHTML = "2116 2117 2118 2119 2120<br>1116 1117 1118 1119 1120"
+    b_c.style.position = "absolute"
+    b_c.style.transform = "rotate(2deg)"
+    b_c.style.fontSize = "7.5px"
+    b_c.style.left = "356px"
+    b_c.style.top = "430px"
+
+    b_d.innerHTML = "2115 2114 2113 2112 2111<br>1115 1114 1113 1112 1111"
+    b_d.style.position = "absolute"
+    b_d.style.transform = "rotate(186deg)"
+    b_d.style.fontSize = "7.5px"
+    b_d.style.left = "352px"
+    b_d.style.top = "495px"
+
+    b_e.innerHTML = "2106 2107 2108 2109 2110<br>1106 1107 1108 1109 1110"
+    b_e.style.position = "absolute"
+    b_e.style.transform = "rotate(5deg)"
+    b_e.style.fontSize = "7.5px"
+    b_e.style.left = "362px"
+    b_e.style.top = "620px"
+
+    b_f.innerHTML = "2105 2104 2103 2102 2101<br>1105 1104 1103 1102 1101"
+    b_f.style.position = "absolute"
+    b_f.style.transform = "rotate(183deg)"
+    b_f.style.fontSize = "7.5px"
+    b_f.style.left = "360px"
+    b_f.style.top = "680px"
+
+
+
+    b_a.innerHTML = "2100 2099 2098 2097 2096 2095 2094 2093 2092 2091 2090 2089<br>1100 1099 1098 1097 1096 1095 1094 1093 1092 1091 1090 1089"
+    b_a.style.position = "absolute"
+    b_a.style.transform = "rotate(271deg)"
+    b_a.style.fontSize = "7.5px"
+    b_a.style.left = "190px"
+    b_a.style.top = "550px"
+
+    b_b.innerHTML = "2132 2131 2130 2129 2128 2127 2126 2125 2124 2123 2022 2021<br>1132 1131 1130 1129 1128 1127 1126 1125 1124 1123 1122 1121"
+    b_b.style.position = "absolute"
+    b_b.style.transform = "rotate(91deg)"
+    b_b.style.fontSize = "7.5px"
+    b_b.style.left = "356px"
+    b_b.style.top = "570px"
+</script>
+  </body>
+</html>

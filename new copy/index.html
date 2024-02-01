@@ -1,0 +1,349 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubki&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <meta name="viewport" content="width=300, initial-scale=0.6, user-scalable=yes">
+  <link rel="stylesheet" href="gatecode.css">
+
+  <style>
+  #myVideo {
+  position: fixed;
+  right: -510px;
+  bottom: -550px;
+  z-index:20;
+  transform:scale(1.35);
+  min-width: 100%;
+  min-height: 120%;
+  display:block;
+}
+  #creatorbox, #oldmaps, #siteTitle {
+  border-radius:7px;
+  font-family:'Krona One';
+  font-size:20px;
+  color:black;
+  transform:rotate(0deg) scale(1);
+}
+  #creatorbox, #oldmaps {
+    background-color:#d35f64;
+    opacity:.95;
+    text-transform: uppercase;
+    text-decoration:none;
+    padding-top:1px;
+    z-index:1;
+    position:fixed;
+    padding-bottom:1px;
+    padding-right:25px;
+    padding-left:25px;
+  }
+  #creatorbox {
+    bottom:10px;
+    right:-15px;
+    transform:rotate(-5deg);
+  }
+  #oldmaps {
+    right:-525px;
+    bottom: 850px;
+    color:black;
+    background-color:white;
+    text-align: right;
+  }
+  #siteTitle {
+    position:fixed;
+    z-index:3;
+    background-color:white;
+    border-radius:0px;
+    margin:auto;
+    top:0px;
+    width:30%;
+    padding-top: 5px;
+    padding-left:110px;
+    padding-right: 650px;
+  }
+  body{
+    background-color:royalblue;
+  }
+  .bg {
+    position:fixed;
+    top:120px;
+    left:410px;
+    z-index:-1;
+      transform:rotate(3deg) scale(2.39);
+      mix-blend-mode:multiply;
+      animation: moveit 12.5s 6.5s 1 normal;
+  }
+  .skyle {
+    position:fixed;
+    z-index:0;
+    font-size:346px;
+    color:yellow;
+    opacity:0;
+    background-size:100vh 120vh;
+    transform:rotate(3deg) scale(2.39);
+    background-image: url("mask_002.png");
+    background-repeat:no-repeat;
+  }
+  .addresses{
+    padding-top: 230px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+  .lSpacing {
+    padding-bottom: 90px;
+  }
+  .lSpacing2 {
+    padding-bottom: 190px;
+  }
+  .aNumber{
+    font-family:'Russo One';
+    font-size:25px;
+    color:white;
+    text-decoration:none;
+    letter-spacing:1.2px;
+    padding-left:6px;
+    box-shadow: 1.7px 5px black;
+    padding-top:3px;
+    padding-right:5px;
+    padding-bottom:3px;
+    margin-right:2px;
+    border-radius:14px 0px 0px;
+    opacity:0.9;
+    text-shadow: 3px 3px blue;
+  }
+  .aPage {
+    z-index:4;
+    font-family:'Krona One';
+    padding-right: 2px;
+    padding-left: 2px;
+    color:white;
+    background-color:black;
+    font-size:28px;
+    letter-spacing:2.6px;
+    border-radius:0px 10px;
+    position:fixed;
+    opacity:1;
+    right:25px;
+    top:40px;
+    box-shadow: 3.9px 4px black;
+  }
+  .storeNumber {
+    font-size:13px;
+  }
+  .aStreet{
+    font-family:'Work Sans';
+    color:black;text-decoration:none;
+    font-size:25px;
+    letter-spacing:-2.1px;
+    padding-right:15px;
+    padding-top:3px;
+    padding-bottom:4px;
+    padding-left:5px;
+    border-radius:0px 10px 10px 0px;
+    margin-left:0px;
+    opacity:0.9;
+    z-index:3;
+    box-shadow: 1.2px 5px black;
+    background-color:cyan;
+    background-blend-mode: multiply;
+  }
+
+
+  .aStLongname {
+    font-size:25px;
+  }
+  .aLink{
+    text-decoration: none;
+    z-index:4;
+
+  }
+  a:hover{
+    text-decoration:none;
+  }
+  .aNoMap {
+    background-color: grey;
+    font-weight:100;
+  }
+  .bSpace {
+    padding-left:25px;
+ }
+ .newButton {
+   background-color:blue;
+   color:white;
+   stroke:black;
+   border-radius:6px;
+   border-color: black;
+   padding:1.7px 23px 1.4px 34px;
+   font-weight:500;
+   font-family:'Electrolize';
+   font-size:17px;
+   opacity:.8;
+   box-shadow: -2px -2px black;
+ }
+ .fin {
+       background-size:921px 522px;
+       background-position: left;
+       background-blend-mode:luminosity;
+ }
+a {
+  text-decoration: none;
+}
+
+@keyframes bg1 {
+  0% {background-position: center center;background-color:black;}
+  29% {background-position: center top;}
+  70% {background-position: top right;}
+  100% {background-position: right left;}
+  25%  {background-color:purple;}
+  50%  {background-color:steelblue;}
+  69%  {background-color:green;}
+  100% {background-color:black;}
+}
+.aNumber {
+  background-image:url(img/3456NH.jpg);
+  animation: bg1 22s ease-in-out .23s infinite normal;
+
+}
+.addresses, .aPage {
+  animation: fade_page 1.5s 0s 1 normal;
+}
+#creatorbox {
+ animation: fade_page 3.3s 0s 1 normal;
+}
+@keyframes fade_page {
+ 0% {opacity:0;}
+ 40% {opacity:0;}
+ 81% {opacity:1;}
+}
+
+ .storeNumber {
+  animation: movearound2 4.4s 0.3s 1 normal;
+}
+
+#siteTitle {
+  animation: titledrop 5.3s 0s 1 normal;
+}
+
+@keyframes titledrop {
+  0% {opacity:0;top:-30px;}
+  50% {opacity:1;top:-30px;}
+  89% {opacity:1;top:-30px;}
+  97% {opacity:1;top:0px;}
+  100% {top: 0px;}
+}
+#oldmaps {
+  animation: oldMapLink 13.3s 7s 1 normal,
+  oldMapLink 10.3s 45s 1 normal, oldMapLink 10.3s 75s 1 normal  ;
+}
+
+@keyframes oldMapLink {
+  0%, 100% {opacity:0;right:-530px;bottom:850px;}
+  15% {opacity:1;right:-5px;bottom:850px;}
+  23%, 80% {opacity:1;right:-25px;}
+  85% {opacity:1;right:-3px;bottom:850px;}
+}
+@keyframes movearound {
+ 0% { right:325px;
+   top:30px;font:2px;opacity:0;}
+   1%  {top:1150px;right:350px;font-size:10px;opacity:1;transform:scale(.23);}
+   41%  {top:208px;right:220px;font-size:20px;opacity:1;transform:scale(1.8);}
+   73%  {top:50px;right:50px;font-size:32px;z-index:9;transform:scale(1);}
+   92%  {top:50px;right:30px;font-size:28px;z-index:9;}
+}
+@keyframes flickin2 {
+  0%, 100% {opacity:1;}
+  50% {opacity: 0;}
+}
+
+
+@keyframes movearound2 {
+
+  10%  {font-size:17px;}
+  50%  {top:50px;right:50px;font-size:20px;}
+  95%  {top:50px;right:50px;font-size:14px;}
+
+}
+.aLink, .aNoMap {
+}
+@keyframes slide_in {
+  0% {position:fixed;top:2720px;left:-600px;}
+  68% {position:relative;top:1300px;left:-800px;}
+  78% {position:relative;top:1300px;left:-400px;}
+  89% {position:relative;top:00px;left:0px;}
+  97% {position:relative;top:10px;left:30px;}
+  100% {position:relative;top:00px;left:20px;}
+
+}
+.newButton{
+  z-index:3;
+}
+
+
+
+@keyframes slippy_num {
+  0% {position:relative; left:0px;}
+  15% {position:relative; left:-2px;}
+  21% {position:relative; left:-6px;}
+  23% {position:relative; left:-14px;}
+  65% {position:relative; left:0px;}
+  73.5% {position:relative; left:13px;z-index:4;}
+  79% {position:relative; left:0px;}
+  82.5% {position:relative; left:18px;z-index:4;}
+  85% {position:relative; left:0px;}
+  89.5% {position:relative; left:13px;z-index:4;}
+  92% {position:relative; left:0px;}
+  97.5% {position:relative; left:3px;z-index:4;}
+  100% {position:relative; left:0px;z-index:1;}
+}
+
+@keyframes moveit {
+  3% {/*mask-size:100vh 120vh;*/
+    transform:rotate(5deg) scale(2.09);}
+    5% {/*mask-size:109vh 129vh;*/
+      transform:rotate(9deg) scale(2.319);}
+    15% {/*mask-size:132vh 160vh;*/
+      transform:rotate(19deg) scale(2.319);}
+30% {/*mask-size:430vh 190vh;*/
+  transform:rotate(-15deg) scale(2.69);}
+  68%   {transform:rotate(-15deg) scale(2.87);opacity:1;}
+  100%, 0% {/*mask-size:100vh 120vh;*
+  transform:rotate(3deg) scale(2.39);*/}
+}
+@keyframes moveit_sky {
+16% {z-index:0;background-color:purple;mix-blend-mode: hard-light;width:400px;height:2930px;background-size: 23vh 190vh;  transform:rotate(-3deg) scale(2.719);*/}
+36% {z-index:10;background-color:steelblue;mix-blend-mode: overlay;left:200px;bottom:240px;background-size: 123vh 290vh;  transform:rotate(0deg) scale(2.719);*/}
+26% {z-index:7;background-color:orange;mix-blend-mode: overlay;left:200px;bottom:240px;background-size: 123vh 290vh;  transform:rotate(0deg) scale(2.719);*/}
+45%, 75% {z-index:10;background-color:yellow;mix-blend-mode: overlay;left:200px;bottom:240px;background-size: 123vh 290vh;  transform:rotate(0deg) scale(2.719);*/}
+50%, 96% {z-index:3;background-color:magenta;mix-blend-mode: exclusion;left:200px;bottom:230px;background-size: 203vh 130vh;  transform:rotate(0deg) scale(2.719);*/}
+0%,  66% {z-index:0;background-color:royalblue;mix-blend-mode: difference;left:130px;bottom:120px;background-size: 153vh 290vh;  transform:rotate(02deg) scale(2.819);*/}
+   3% {opacity: .61;}
+   70% {opacity: .4;}
+   90% {opacity: .2;}
+   95% {opacity: 0;}
+}
+  </style>
+</head>
+<body>
+
+
+  <div id="creatorbox">created by jeff p</div>
+  <div id="siteTitle">mapmesa.com</div>
+  <div id="oldmaps"><a href="http://mapmesa.com/old/">tap for&nbsp;&nbsp;&nbsp;<br>old&nbsp;&nbsp;<br> mapmesa&nbsp;&nbsp;</a></div>
+
+  <div class="bg"></div>
+  <div class = "aPage">MESA&nbsp;&nbsp;&nbsp;
+    <span class=storeNumber>6607</span><br>
+    <span class="smallMaps">apartment maps</span></div>
+    <div class="skyle"></div>
+<div class="addresses" style="display:block;">
+</div>
+</div>
+
+<script src="mess.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="color_ani.css">
+      <link rel="stylesheet" href="gatecode.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <style media="screen">
+      .bgMap {
+        position:relative;
+        background-image:url("img/7700NC.jpg");
+        background-repeat:no-repeat;
+        background-size:300px 500px;
+        transform:rotate(0deg) scale(2.34);
+        left:190px;
+        top:320px;
+        z-index:0;
+      }
+      .bgMapLarge {
+        position:absolute;
+        z-index:1;
+        transform:rotate(44deg) scale(.505);
+        left:-2120px;
+        top:-890px;
+      }
+     body {
+      }
+      .container {
+        position: fixed;
+        width: 400px;
+        height: 500px;
+      }
+      .address {
+        z-index:2;
+        position:fixed;
+        left:20px;
+        font-family:'Righteous';
+        font-size:64px;
+        color:white;
+        padding:0px 10px 1px 10px;
+        border-radius:5px;
+        top:20px;
+      }
+      .gatecode {
+          z-index:2;
+          position:fixed;
+          left:20px;
+          font-family:'Righteous';
+          font-size:28px;
+          color:white;
+          padding:0px 10px 1px 10px;
+          border-radius:9px;
+          top:91px;
+        }
+    .num {
+        font-family:'Azeret Mono';
+        text-shadow:.2px .5px red;
+        font-size:12px;
+        border-radius:5px;
+        padding-left:5px;
+        padding-right:2px;
+      }
+      .address, .num, .gatecode {
+        background-image:url("img/bgdist.png");
+        border-radius:5px;
+        background-size:457px 145px;
+        background-repeat:repeat;
+        background-color:grey;
+      }
+          .x1 {
+        color:purple;
+        position:absolute;
+        left:150px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:720px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x1 {
+        color:purple;
+        position:absolute;
+        left:150px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:720px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x2 {
+        color:purple;
+        position:absolute;
+        left:270px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:660px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x3 {
+        color:purple;
+        position:absolute;
+        left:450px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:660px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x4 {
+        color:purple;
+        position:absolute;
+        left:630px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:620px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x5 {
+        color:purple;
+        position:absolute;
+        left:470px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:520px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x6 {
+        color:purple;
+        position:absolute;
+        left:360px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:500px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x7 {
+        color:purple;
+        position:absolute;
+        left:150px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:590px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x8 {
+        color:purple;
+        position:absolute;
+        left:80px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:320px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x9 {
+        color:purple;
+        position:absolute;
+        left:85px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:180px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x10 {
+        color:purple;
+        position:absolute;
+        left:130px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:100px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x11 {
+        color:purple;
+        position:absolute;
+        left:300px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:140px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x12 {
+        color:purple;
+        position:absolute;
+        left:400px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:150px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+          .x13 {
+        color:purple;
+        position:absolute;
+        left:400px;
+        font-size:37px;
+        letter-spacing:9.4px;
+        top:320px;
+        transform:rotate(0deg);
+        z-index:3;
+      }
+      .halfscale {
+        transform:scale(1.25);
+        top:100px;
+        left:100px;
+      }
+    </style>
+    <script src="gatecode_2.js"></script>
+
+  </head>
+  <body>
+    <div class="address">7700 N Capital Of TX<br><span class="gatecode">GATE CODE: <span class="gateCode_7700NCapitalOfTX"></span></span></div>
+    <div class="container halfscale">
+    <div class="bgMapLarge"><img src="large-img/7700NC.jpg"></img></div>
+    <div class="num x1">1</div>
+    <div class="num x2">2</div>
+    <div class="num x3">3</div>
+    <div class="num x4">4</div>
+    <div class="num x5">5</div>
+    <div class="num x6">6</div>
+    <div class="num x7">7</div>
+    <div class="num x8">8</div>
+    <div class="num x9">9</div>
+    <div class="num x10">10</div>
+    <div class="num x11">11</div>
+    <div class="num x12">12</div>
+    <div class="num x13">13</div>
+  </body>
+</html>

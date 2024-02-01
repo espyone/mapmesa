@@ -1,0 +1,128 @@
+<html>
+<head>
+  <link rel="stylesheet" href="color_ani.css">
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <style>
+#parent {
+  position:relative;
+}
+.title {
+  position:absolute;
+}
+.bgMapLarge {
+  position:absolute;
+  z-index:1;
+  transform:rotate(-30deg) scale(.75);
+  left:-1570px;
+  top:140px;
+}
+.address {
+  z-index:2;
+  position:absolute;
+  left:20px;
+  font-family:'Righteous';
+  font-size:64px;
+  color:white;
+  padding:0px 10px 1px 10px;
+  border-radius:5px;
+  top:20px;
+}
+img {
+  transform:rotate(0deg) scale(1.04);
+  position:absolute;
+  top:20px;
+  left:20px;
+}
+.num {
+  font-family:'Azeret Mono';
+  text-shadow:.2px .5px red;
+  font-size:12px;
+  padding-left:5px;
+  padding-right:2px;
+}
+.address, .num {
+  background-image:url("img/bgdist.png");
+  background-size:457px 145px;
+  background-repeat:repeat;
+}
+.x00-04 {
+  color:purple;
+  position:absolute;
+  left:190px;
+  font-size:13px;
+  letter-spacing:5.4px;
+  top:470px;
+  transform:rotate(1deg);
+  z-index:3;
+}
+.x24-20 {
+  color:purple;
+  position:absolute;
+  left:174px;
+  font-size:10px;
+  letter-spacing:3.4px;
+  top:190px;
+  transform:rotate(270deg);
+  z-index:3;
+}
+.x10-14 {
+  color:purple;
+  position:absolute;
+  left:169px;
+  font-size:10px;
+  letter-spacing:3.4px;
+  top:390px;
+  transform:rotate(270deg);
+  z-index:3;
+}
+.xElse {
+  color:purple;
+  position:absolute;
+  left:106px;
+  font-size:8px;
+  letter-spacing:9.3px;
+  top:270px;
+  transform:rotate(90.5deg);
+  z-index:3;
+}
+.x28 {
+  color:purple;
+  position:absolute;
+  left:225px;
+  font-size:9px;
+  letter-spacing:3.4px;
+  top:115px;
+  transform:rotate(270deg);
+  z-index:3;
+}
+.o {
+  letter-spacing: 3.6;
+  padding-left:20px;
+  padding-right:20px;
+}
+.halfscale {
+  transform:rotate(270deg) scale(1.25);
+  top:280px;
+  left:-74px;
+}
+.container {
+  position: fixed;
+  width: 500px;
+  height: 200px;
+}
+
+  </style>
+</head>
+<body>
+<div class="address">2450 Ashdale</div>
+<div class="container halfscale">
+  <div class="bgMapLarge"><img src= "large-img/2450A.jpg"></img></div>
+<div class="num x00-04">200-204<br>100-104</div>
+<div class="num x24-20">224-220<br>124-120</div>
+<div class="num x10-14">210-214<br>110-114</div>
+<div class="num xElse">227-225 <span class="o">219-215</span> 209-205<br>127-125 <span class="o">119-115</span> 109-105</div>
+<div class="num x28">228<br>128</div>
+</div>
+</body>
+</html>

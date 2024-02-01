@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+       <link rel="stylesheet" href="color_ani.css">
+      <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="utf-8">
+    <title></title>
+<style>
+
+  .address , .num {
+    opacity:1;
+    background-image:url("img/bgdist.png");
+    background-size:457px 145px;
+    background-repeat:repeat;z-index:2;
+    left:20px;
+    font-size:64px;
+    color:white;
+    top:20px;
+    }
+    .num {
+      position:absolute;font-family:'Azeret Mono';
+    }
+    .address {
+      position:fixed;
+      z-index:4;
+      font-family:'Righteous';
+      border-radius:5px;
+      padding:0px 10px 1px 10px;
+
+
+    }
+  #parent {
+    position:fixed;
+    width:300px;
+    height:500px;
+    transform:rotate(63deg) scale(.9);
+    left:290px;
+    top:-1720px;
+
+  }
+.bgMapLarge { z-index:2;
+  position:absolute;
+}
+.x300 {
+  z-index:4;
+  color:red;
+  background-color:white;
+  font-size:18px;
+  transform:rotate(0deg);
+  top:610px;
+left:590px;
+}
+.x102-101 {
+  z-index:4;
+  font-size:12px;
+  transform:rotate(130deg);
+  top:660px;
+left:640px;
+}
+.x106-105 {
+  z-index:4;
+  font-size:12px;
+  transform:rotate(142deg);
+  top:590px;
+left:706px;
+}
+.x100-103 {
+  z-index:4;
+  font-size:12px;
+  transform:rotate(-50deg);
+  top:685px;
+left:660px;
+}
+.x104-107 {
+  z-index:4;
+  font-size:12px;
+  transform:rotate(-38deg);
+  top:615px;
+left:726px;
+}
+.x11-08 {
+  z-index:4;
+  font-size:12px;
+  transform:rotate(135deg);
+  top:520px;
+left:748px;
+}
+.x15-12 {
+  z-index:4;
+  font-size:11px;
+  transform:rotate(25deg);
+  top:400px;
+left:825px;
+}
+.x19-16 {
+  z-index:4;
+  font-size:11px;
+  transform:rotate(-19deg);
+  top:400px;
+left:705px;
+}
+.x25-20 {
+  z-index:4;
+  font-size:9px;
+  transform:rotate(56deg);
+  top:500px;
+left:595px;
+}
+.x29-26 {
+  z-index:4;
+  font-size:10px;
+  transform:rotate(8deg);
+  top:490px;
+left:495px;
+}
+.x39-34 {
+  z-index:4;
+  font-size:11px;
+  transform:rotate(18deg);
+  top:460px;
+left:305px;
+}
+.x45-40 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(300deg);
+  top:505px;
+left:215px;
+}
+.x51-46 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(300deg);
+  top:625px;
+left:155px;
+}
+.x57-52 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(183deg);
+  top:729px;
+left:95px;
+}
+.x63-58 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(183deg);
+  top:734px;
+left:235px;
+}
+.x77-72 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(183deg);
+  top:744px;
+left:485px;
+}
+.x83-78 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(118deg);
+  top:624px;
+left:245px;
+}
+.x86-84 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(103deg);
+  top:554px;
+left:345px;
+}
+
+.x89-87 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(282deg);
+  top:554px;
+left:367px;
+}
+.x93-90 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(185deg);
+  top:554px;
+left:442px;
+}
+.x94-97 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(5deg);
+  top:584px;
+left:442px;
+}
+.x64-67 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(5deg);
+  top:759px;
+left:378px;
+}
+.x71-68 {
+  z-index:4;
+  font-size:8px;
+  transform:rotate(185deg);
+  top:734px;
+left:378px;
+}
+.halfscale {
+position:relative;
+transform:rotate(-33deg) scale(1.4);
+left:-500px;
+top:-130px;
+}
+</style>
+  </head>
+  <body>
+<div class="address">4159 Steck</div>
+<div class="halfscale"></div>
+<div class="num x300">300</div>
+<div class="num x102-101">102 101</div>
+<div class="num x106-105">106 105</div>
+<div class="num x100-103">100 103</div>
+<div class="num x104-107">104 107</div>
+<div class="num x11-08">211 210 209 208<br>111 110 109 108</div>
+<div class="num x15-12">215 214 213 212<br>115 114 113 112</div>
+<div class="num x19-16">219 218 217 216<br>119 118 117 116</div>
+<div class="num x25-20">225 224 223 222 221 220<br>125 124 123 122 121 120</div>
+<div class="num x29-26">229 228 227 226<br>129 128 127 126</div>
+<div class="num x39-34">239 238 237 236 235 234<br>139 138 137 136 135 134</div>
+<div class="num x45-40">245 244 243 242 241 240<br>145 144 143 142 141 140</div>
+<div class="num x51-46">251 250 249 248 247 246<br>151 150 149 148 147 146</div>
+<div class="num x57-52">257 256 255 254 253 252<br>157 156 155 154 153 152</div>
+<div class="num x63-58">263 262 261 260 259 258<br>163 162 161 160 159 158</div>
+<div class="num x77-72">277 276 275 274 273 272<br>177 176 175 174 173 172</div>
+<div class="num x83-78">283 282 281 280 279 278<br>183 182 181 180 179 178</div>
+<div class="num x86-84">186 185 184</div>
+<div class="num x89-87">189 188 187</div>
+<div class="num x93-90">293 292 291 290<br>193 192 191 190</div>
+<div class="num x94-97">294 295 296 297<br>194 195 196 197</div>
+<div class="num x64-67">264 265 266 267<br>164 165 166 167</div>
+<div class="num x71-68">271 270 269 268<br>171 170 169 168</div>
+<div id="parent">
+<div class="bgMapLarege"><img src="large-img/4159S.jpg"></img></div>
+</div>
+    </body>
+</html>

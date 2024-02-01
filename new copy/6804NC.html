@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+<style>
+
+
+.parent {
+    position:relative;
+    width:400px;
+    height:800px;
+    left:270px;
+    top:570px;
+    transform:scale(2.4);
+}
+.bgMapLarge {
+    z-index:1;
+    position:absolute;
+    top:-470px;
+    left:-225px;
+    width:856px;
+    height:1852px;
+    background-image:url('large-img/6804NC_bg.png');
+    background-color:white;
+     transform:scale(.5);
+     animation: slide-in-bg 1.3s .0s 1 normal;
+
+}
+.textMapLarge {
+    z-index:2;
+    position:absolute;
+    top:-1860px;
+    left:-865px;
+    width:2140px;
+    height:4630px;
+    background-image:url('large-img/6804NC_text_5x.png');
+    /* background-color:yellow;
+    opacity:.3; */
+     transform:scale(.2);
+}
+.address {
+  z-index:2;
+  position:fixed;
+  font-family:'Righteous';
+  font-size:64px;
+  color:white;
+  padding:0px 10px 1px 10px;
+  border-radius:5px;
+  background-image:url('img/bgdist.png');
+  background-color:grey;
+  background-size:457px 145px;
+  background-repeat:repeat;
+  mix-blend-mode:screen;
+  line-height:60px;
+
+}
+.address {
+  left:20px;
+  top:20px;
+}
+
+</style>
+</head>
+<body>
+  <div class="address">6804 N Capital Of TX</span></div>
+
+
+<div class="parent">
+<div class="textMapLarge"></div>
+<div class="bgMapLarge"></div></div>
+</html>
